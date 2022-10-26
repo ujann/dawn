@@ -443,6 +443,7 @@ class ModalDialog extends HTMLElement {
       'click',
       this.hide.bind(this, false)
     );
+    ['shopify:block:select', 'shopify:section:select'].forEach(event => document.addEventListener(event, () => this.hide()));
     this.addEventListener('keyup', (event) => {
       if (event.code.toUpperCase() === 'ESCAPE') this.hide();
     });
