@@ -51,7 +51,7 @@
         "type": "range",
         "id": "brand_desktop_image_width",
         "min": 50,
-        "max": 400,
+        "max": 550,
         "step": 5,
         "default": 100,
         "unit": "px",
