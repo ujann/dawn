@@ -21,7 +21,14 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
+        },
+        "6085d1c5-eadb-4859-bb1d-6668bc57afd7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p style=\"white-space: pre-wrap;\">{{ product.metafields.custom.kurzbeschreibung | truncate: 250, \". . . \" }}<\/p>"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -35,17 +42,15 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
-        },
-        "description": {
-          "type": "description"
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
-            "icon": "leather",
+            "icon": "clipboard",
             "content": "",
             "page": ""
           }
@@ -53,14 +58,15 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Versandinformationen",
             "icon": "truck",
-            "content": "",
+            "content": "<p>Lieferzeit:<strong> <br\/>1-3 Tage<\/strong> (DE)<br\/>4-5 Tage (andere EU Länder)<\/p><p>Versandkosten:<br\/>Deutschland: € 4,95<br\/><strong>Kostenloser Versand (DE) ab 50 € Warenwert.<br\/><\/strong>Andere EU-Länder: € 7,95<\/p><p><\/p><p><\/p>",
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -70,6 +76,7 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -82,6 +89,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
         }
       },
       "block_order": [
@@ -89,20 +101,21 @@
         "title",
         "caption",
         "price",
+        "6085d1c5-eadb-4859-bb1d-6668bc57afd7",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
-        "media_size": "large",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -110,89 +123,30 @@
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
+    "1657525767d8beb0d1": {
+      "type": "custom-liquid",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
+        "custom_liquid": "<div class= \"page-width\" style=\"white-space: pre-wrap;\"><p>{{ product.description }}<\/p><\/div>",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 12
+          }
+        },
+    "5de674fe-07a5-4a7a-8d11-dc89b50cbf6b": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- assign page_handle = product.vendor | handleize  -%}\n<div class=\"page-width\">\n{{pages[page_handle].content}}<div>",
+        "color_scheme": "background-2",
+        "padding_top": 12,
+        "padding_bottom": 52
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Das könnte dir auch gefallen",
         "heading_size": "h2",
+        "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "background-1",
         "image_ratio": "square",
@@ -203,12 +157,54 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "16577241689b7232d0": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "165772416814385b6b-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "165772416814385b6b-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "165772416814385b6b-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "165772416814385b6b-0",
+        "165772416814385b6b-1",
+        "165772416814385b6b-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
-    "product-recommendations"
+    "1657525767d8beb0d1",
+    "5de674fe-07a5-4a7a-8d11-dc89b50cbf6b",
+    "product-recommendations",
+    "16577241689b7232d0"
   ]
 }
