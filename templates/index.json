@@ -57,7 +57,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Buntes zum Spielen, Basteln, Wohnen und Schenken!",
+            "heading": "<p>Buntes zum Spielen, Basteln, Wohnen und Schenken!</p>",
             "heading_size": "h2"
           }
         },
