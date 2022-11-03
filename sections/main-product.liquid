@@ -502,7 +502,7 @@
 {% endcomment %}
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                                 {% for variant in product.variants %}
-                                    {% if variant.title==value %}
+                                    {% if variant.title == value %}
                                         <img name={{ value }} src="{{ variant.image | image_url: width: 40 }}"/>
                                     {% endif %}
                                 {%- endfor -%}
