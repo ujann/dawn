@@ -495,9 +495,18 @@
                               checked
                             {% endif %}
                           >
+{% comment %}
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
                           </label>
+{% endcomment %}
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                                {% for variant in product.variants %}
+                                    {% if variant.title==value %}
+                                        <img name={{ value }} src="{{ variant.image | image_url: width: 40 }}"/>
+                                    {% endif %}
+                                {%- endfor -%}
+                            </label>
                         {%- endfor -%}
                       </fieldset>
                     {%- endfor -%}
