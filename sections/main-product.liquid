@@ -504,7 +504,7 @@
                                 {% if option.name == "Farbe" %}
                                     {% for variant in product.variants %}
                                         {% if variant.title == value %}
-                                            <img name={{ value }} src="{{ variant.image | image_url: width: 50 }}"/>
+                                            <img name={{ value }} src="{{ variant.image | image_url: width: 50 }}" title=""/>
                                         {% endif %}
                                     {%- endfor -%}
                                 {% else %}
