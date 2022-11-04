@@ -167,7 +167,7 @@
         "settings": {
           "color_scheme": "accent-2",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "Newsletter abonnieren",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
