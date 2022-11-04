@@ -11,7 +11,9 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "caption": {
           "type": "text",
@@ -22,7 +24,8 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "6085d1c5-eadb-4859-bb1d-6668bc57afd7": {
           "type": "custom_liquid",
@@ -37,7 +40,9 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -90,10 +95,17 @@
             "share_label": "Share"
           }
         },
+        "82767405-3313-43dd-bb37-4ddb9cc37f20": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"sharethis-inline-share-buttons\"><\/div>"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -110,10 +122,12 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
+        "82767405-3313-43dd-bb37-4ddb9cc37f20",
         "description"
       ],
       "settings": {
         "enable_sticky_info": true,
+        "media_position": "left",
         "gallery_layout": "thumbnail_slider",
         "media_size": "small",
         "mobile_thumbnails": "hide",
@@ -125,13 +139,13 @@
     },
     "1657525767d8beb0d1": {
       "type": "custom-liquid",
-          "settings": {
+      "settings": {
         "custom_liquid": "<div class= \"page-width\" style=\"white-space: pre-wrap;\"><p>{{ product.description }}<\/p><\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 12
-          }
-        },
+      }
+    },
     "5de674fe-07a5-4a7a-8d11-dc89b50cbf6b": {
       "type": "custom-liquid",
       "settings": {
