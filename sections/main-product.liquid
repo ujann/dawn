@@ -507,8 +507,10 @@
                                         {% assign variant_option_value = variant[option_number] %}
                                         {% if variant_option_value == value %}
                                             <img name={{ value }} src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}"/>
+{% comment %}
                                         {% else %}
                                             !! {{ value }} != {{ variant_option_value }} ({{ option_number }})
+{% endcomment %}
                                         {% endif %}
                                     {%- endfor -%}
                                 {% else %}
