@@ -505,6 +505,8 @@
                                     {% for variant in product.variants %}
                                         {% if variant.title == value %}
                                             <img name={{ value }} src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}"/>
+                                        {% else %}
+                                            !! {{ value }} != {{ variant.title }}
                                         {% endif %}
                                     {%- endfor -%}
                                 {% else %}
