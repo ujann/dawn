@@ -83,14 +83,15 @@
     -%}
   </span>
 
-  {% if media.preview_image.aspect_ratio > 0.0 %}
+  {% if media.preview_image.aspect_ratio > 1.0 %}
     {% assign padding_top = 1 | divided_by: media.preview_image.aspect_ratio | times: 100 %}
+    {% assign max_height_percentage = media.aspect_ratio | times: 100 %}
   {% else %}
     {% assign padding_top = 100 %}
+    {% assign max_height_percentage = 100 %}
   {% endif %}
   <div class="product__media media media--transparent gradient global-media-settings" style="padding-top: {{ padding_top }}%;">
     {% comment %} Theme adjustment: images that are higher than wide (aspect-ratio < 1.0) must be limited in height: {% endcomment %}
-    {% assign max_height_percentage = media.aspect_ratio | times: 100 %}
     {% assign square_style =  'object-fit: contain; max-height: '  | append: max_height_percentage  | append: '%;' %}
     {{ media.preview_image | image_url: width: 1946 | image_tag:
       style: square_style,
