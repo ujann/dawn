@@ -506,7 +506,7 @@
                                     {% for variant in product.variants %}
                                         {% assign variant_option_value = variant[option_number] %}
                                         {% if variant_option_value == value %}
-                                            <img name={{ value }} src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}" style="max-height: 50px;"/>
+                                            <img name={{ value }} src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}" style="min-width: 50px; max-height: 50px;"/>
 {% comment %}
                                         {% else %}
                                             !! {{ value }} != {{ variant_option_value }} ({{ option_number }})
