@@ -83,7 +83,7 @@
     -%}
   </span>
 
-  {% if media.preview_image.aspect_ratio > 1000.0 %}
+  {% if media.preview_image.aspect_ratio > 0.0 %}
     {% assign padding_top = 1 | divided_by: media.preview_image.aspect_ratio | times: 100 %}
   {% else %}
     {% assign padding_top = 100 %}
