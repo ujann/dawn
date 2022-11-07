@@ -85,7 +85,7 @@
 
   {% comment %} Theme adjustment: images that are higher than wide (aspect-ratio < 1.0) must be limited in height: {% endcomment %}
   {% if media.preview_image.aspect_ratio > 1.0 %}
-    {% assign padding_top = 1 | divided_by: media.preview_image.aspect_ratio | times: 100 %}
+    {% assign padding_top = 100 %}
   {% else %}
     {% assign padding_top = 100 %}
   {% endif %}
