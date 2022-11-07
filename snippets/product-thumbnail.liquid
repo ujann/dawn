@@ -84,15 +84,9 @@
   </span>
 
   {% comment %} Theme adjustment: images that are higher than wide (aspect-ratio < 1.0) must be limited in height: {% endcomment %}
-  {% if media.preview_image.aspect_ratio > 1.0 %}
-    {% assign padding_top = 100 %}
-  {% else %}
-    {% assign padding_top = 100 %}
-  {% endif %}
-  {% assign square_style =  'object-fit: contain; max-height: 100%;' %}
-  <div class="product__media media media--transparent gradient global-media-settings" style="padding-top: {{ padding_top }}%;">
+  <div class="product__media media media--transparent gradient global-media-settings" style="padding-top: 100%;">
     {{ media.preview_image | image_url: width: 1946 | image_tag:
-      style: square_style,
+      style: 'object-fit: contain; max-height: 100%;',
       loading: lazy,
       sizes: sizes,
       widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
