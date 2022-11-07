@@ -503,10 +503,12 @@
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                                 {% if option.name == "Farbe" %}
                                     {% assign option_number = option.position | prepend:'option' %}
+                                    {% assign variant_found = 0 %}
                                     {% for variant in product.variants %}
                                         {% assign variant_option_value = variant[option_number] %}
-                                        {% if variant_option_value == value %}
+                                        {% if variant_option_value == value and variant_found == 0 %}
                                             <img name={{ value }} src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}" style="object-fit: scale-down; min-width: 50px; max-height: 50px;"/>
+                                            {% assign variant_found = 1 %}
 {% comment %}
                                         {% else %}
                                             !! {{ value }} != {{ variant_option_value }} ({{ option_number }})
