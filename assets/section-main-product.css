@@ -211,6 +211,9 @@ fieldset.product-form__input .form__label {
   cursor: pointer;
   position: relative;
 }
+.variant-pill-image_text {
+  font-size: 1.2rem;
+}
 
 .product-form__input input[type='radio'] + label:before {
   content: '';
