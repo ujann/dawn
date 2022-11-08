@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1667947133,
+  "tsPublished": 1667948099,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -279,8 +279,8 @@
       }
     },
     "content": {
-      "href": "https:\/\/bunter-vogel-store.myshopify.com\/policies\/privacy-policy",
-      "imprintHref": "\/",
+      "href": "https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy",
+      "imprintHref": "https:\/\/buntervogel-geschenke.de\/pages\/impressum",
       "close": "&#10005;",
       "target": "",
       "logo": "<img class=\"cc-banner-logo\" style=\"height: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/6\/assets\/pandectes-logo.png?v=1667947117\" alt=\"Bunter Vogel Store\" \/>"
