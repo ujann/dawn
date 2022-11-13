@@ -501,7 +501,7 @@
                           </label>
 {% endcomment %}
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                                {% if option.name == "Farbe" %}
+                                {% if option.name == 'Farbe' or option.name == 'Design' %}
                                     {% assign option_number = option.position | prepend:'option' %}
                                     {% assign variant_found = 0 %}
                                     {% for variant in product.variants %}
