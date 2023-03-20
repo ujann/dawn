@@ -1,7 +1,7 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#0c5d45",
+    "colors_accent_1": "#1a2c5c",
     "gradient_accent_1": "",
     "colors_accent_2": "#3c61b7",
     "gradient_accent_2": "",
@@ -15,7 +15,7 @@
     "heading_scale": 100,
     "type_body_font": "avenir_next_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1600,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
@@ -99,28 +99,14 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Kostenloser Versand innerhalb Deutschlands ab 50€",
-              "text_alignment": "center",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
         "settings": {
         }
       },
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/Element_9.png",
+          "color_scheme": "accent-1",
+          "logo": "shopify:\/\/shop_images\/Element_19.png",
           "logo_width": 130,
           "logo_position": "top-left",
           "menu": "main-menu",
