@@ -53,6 +53,7 @@
         {%- else -%}
           {% assign product_media = images['BunterVogel-Platzhalter.jpg'] %}
         {%- endif -%}
+        <script>console.log('PROD_MEDIA:', {{ product_media | json }});</script>
         {%- if card_product.featured_media -%}
           <div class="card__media">
             <div class="media media--transparent media--hover-effect">
