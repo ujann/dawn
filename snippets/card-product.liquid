@@ -52,7 +52,6 @@
           {% assign product_media = card_product.featured_media %}
         {%- else -%}
           {% assign product_media = images['BunterVogel-Platzhalter.jpg'] %}
-          <script>console.log('PROD_MEDIA WIDTH:', {{ product_media.width }});</script>
         {%- endif -%}
         
         {%- if product_media -%}
