@@ -20,12 +20,18 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
+  {%- if card_product.featured_media -%}
+    {% assign product_media = card_product.featured_media %}
+  {%- else -%}
+    {% assign product_media = images['BunterVogel-Platzhalter.jpg'] %}
+  {%- endif -%}
+
   {%- liquid
     assign ratio = 1
-    if card_product.featured_media and media_aspect_ratio == 'portrait'
+    if product_media and media_aspect_ratio == 'portrait'
       assign ratio = 0.8
-    elsif card_product.featured_media and media_aspect_ratio == 'adapt'
-      assign ratio = card_product.featured_media.aspect_ratio
+    elsif product_media and media_aspect_ratio == 'adapt'
+      assign ratio = product_media.aspect_ratio
     endif
     if ratio == 0 or ratio == nil
       assign ratio = 1
@@ -36,24 +42,19 @@
       class="
         card
         card--{{ settings.card_style }}
-        {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
+        {% if product_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
         {% if extend_height %} card--extend-height{% endif %}
-        {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
+        {% if product_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
       <div
-        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
+        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if product_media or settings.card_style == 'standard' %} ratio{% endif %}"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
-        {%- if card_product.featured_media -%}
-          {% assign product_media = card_product.featured_media %}
-        {%- else -%}
-          {% assign product_media = images['BunterVogel-Platzhalter.jpg'] %}
-        {%- endif -%}
-        
+
         {%- if product_media -%}
           <div class="card__media">
             <div class="media media--transparent media--hover-effect">
@@ -107,7 +108,7 @@
           <div class="card__information">
             <h3
               class="card__heading"
-              {% if card_product.featured_media == nil and settings.card_style == 'standard' %}
+              {% if product_media == nil and settings.card_style == 'standard' %}
                 id="title-{{ section_id }}-{{ card_product.id }}"
               {% endif %}
             >
@@ -143,8 +144,8 @@
       <div class="card__content">
         <div class="card__information">
           <h3
-            class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
-            {% if card_product.featured_media or settings.card_style == 'card' %}
+            class="card__heading{% if product_media or settings.card_style == 'standard' %} h5{% endif %}"
+            {% if product_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
           >
@@ -331,7 +332,7 @@
         card--text
         {% if extend_height %} card--extend-height{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-        {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
+        {% if product_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {{ horizontal_class }}
       "
       style="--ratio-percent: 100%;"
