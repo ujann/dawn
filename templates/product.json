@@ -22,15 +22,15 @@
             "text_style": "subtitle"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
         "6085d1c5-eadb-4859-bb1d-6668bc57afd7": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "<p style=\"white-space: pre-wrap;\">{{ product.metafields.custom.kurzbeschreibung | truncate: 250, \". . . \" }}<\/p>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
           }
         },
         "variant_picker": {
@@ -113,8 +113,8 @@
         "vendor",
         "title",
         "caption",
-        "price",
         "6085d1c5-eadb-4859-bb1d-6668bc57afd7",
+        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
