@@ -15,6 +15,18 @@
           "settings": {
           }
         },
+        "b3a451b7-9abb-4714-b63b-d971c2f68338": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "K: {{product.metafields.global.produktkurzbeschreibung.type }}"
+          }
+        },
+        "41634808-5cce-447b-9ff2-c5fa4fa192fe": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -112,6 +124,8 @@
       "block_order": [
         "vendor",
         "title",
+        "b3a451b7-9abb-4714-b63b-d971c2f68338",
+        "41634808-5cce-447b-9ff2-c5fa4fa192fe",
         "caption",
         "price",
         "6085d1c5-eadb-4859-bb1d-6668bc57afd7",
