@@ -18,7 +18,7 @@
         "b3a451b7-9abb-4714-b63b-d971c2f68338": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "K: {{product.metafields.global.produktkurzbeschreibung.type }}"
+            "custom_liquid": "K: {{product.metafields.global.produktkurzbeschreibung.value }}"
           }
         },
         "41634808-5cce-447b-9ff2-c5fa4fa192fe": {
