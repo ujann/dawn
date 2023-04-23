@@ -25,7 +25,7 @@
         "6085d1c5-eadb-4859-bb1d-6668bc57afd7": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p style=\"white-space: pre-wrap;\">{{ product.metafields.custom.kurzbeschreibung | truncate: 250, \". . . \" }}<\/p>"
+            "custom_liquid": "{% assign bullets = product.metafields.custom.kurzbeschreibung | split: \"\\n\" %}\n<ul>\n{% for bullet in bullets %}\n  <li>{{ bullet }}<\/li>\n{% endfor %}\n<\/ul>"
           }
         },
         "price": {
