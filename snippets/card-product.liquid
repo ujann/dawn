@@ -23,6 +23,12 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
+  {%- if card_product.featured_media -%}
+    {% assign product_media = card_product.featured_media %}
+  {%- else -%}
+    {% assign product_media = images['BunterVogel-Platzhalter.jpg'] %}
+  {%- endif -%}
+
   {%- liquid
     assign ratio = 1
     if card_product.featured_media and media_aspect_ratio == 'portrait'

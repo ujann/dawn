@@ -5,6 +5,7 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image banner",
             "heading_size": "h0"
@@ -12,6 +13,7 @@
         },
         "text": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
@@ -19,10 +21,11 @@
         },
         "button": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Produkte",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -35,12 +38,14 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/BunterVogel-Website_Banner-3.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
+        "color_scheme": "background-2",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -52,14 +57,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "<p>Buntes zum Spielen, Basteln, Wohnen und Schenken!<\/p>",
+            "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Beschenke deine Lieben oder dich selbst! Alles, was du in unserem kleinen, feinen Laden findest, ist von uns persönlich getestet. Wir lieben coole, hübsche, lustige, inspirierende und praktische Dinge. Auf gute Qualität, nachhaltige Produktion und faire Arbeitsbedingungen legen wir großen Wert. Wir haben Schönes von bekannten Marken und Außergewöhnliches von kleinen Labels im Sortiment, das wir gerade mit viel Herzblut aufbauen. Du kennst tolle Produkte, die wir aufnehmen sollen? Schreib uns an!<\/p><p><\/p>"
           }
         }
       },
@@ -68,27 +73,36 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Wir empfehlen dir:",
         "heading_size": "h2",
+        "description": "",
+        "show_description": true,
+        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
+        "full_width": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
         "color_scheme": "background-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
+        "enable_quick_add": true,
         "columns_mobile": "2",
         "padding_top": 28,
         "padding_bottom": 36
@@ -96,6 +110,7 @@
     },
     "collage": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -127,6 +142,7 @@
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -134,11 +150,13 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
+        "heading": "NEU: Spieltz Party Ludo - der Spiele-Klassiker in der Party-Version",
+        "heading_size": "h2",
+        "cover_image": "shopify:\/\/shop_images\/52358460011_a9dcd8ddbf_o-2.jpg",
+        "video_url": "https:\/\/youtu.be\/2mLdD-2Tbxg",
+        "description": "Spieltz Party Ludo für 8-10 Personen",
         "full_width": false,
         "color_scheme": "background-1",
         "padding_top": 36,
@@ -147,6 +165,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",

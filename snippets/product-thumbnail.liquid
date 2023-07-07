@@ -101,12 +101,16 @@
         <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
       </svg>
     </div>
+    {% comment %} Theme adjustment: images that are higher than wide (aspect-ratio < 1.0) must be limited in height: {% endcomment %}
+    {% comment %} gradient global-media-settings" style="padding-top: 100%;{% endcomment %}
+    {% comment %} style: 'object-fit: contain; max-height: 100%;'{% endcomment %}
     <div class="product__media media media--transparent">
       {{ media.preview_image | image_url: width: 1946 | image_tag:
         class: image_class,
         loading: lazy,
         sizes: sizes,
-        widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+        widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+        alt: media.preview_image.alt | escape
       }}
     </div>
     <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
