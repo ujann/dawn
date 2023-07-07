@@ -1,11 +1,11 @@
 {
   "store": {
     "plan": "basic",
-    "theme": "dawn\/7.0.1-buntervogel",
+    "theme": "dawn\/10.0.0-buntervogel",
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1667948099,
+  "tsPublished": 1688750822,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -86,6 +86,9 @@
       },
       "erasureSectionParagraphText": {
         "de": "Sie haben das Recht, die Löschung aller Ihrer Daten zu verlangen. Danach können Sie nicht mehr auf Ihr Konto zugreifen."
+      },
+      "declIntroText": {
+        "de": "Wir verwenden Cookies, um die Funktionalität der Website zu optimieren, die Leistung zu analysieren und Ihnen ein personalisiertes Erlebnis zu bieten. Einige Cookies sind für den ordnungsgemäßen Betrieb der Website unerlässlich. Diese Cookies können nicht deaktiviert werden. In diesem Fenster können Sie Ihre Präferenzen für Cookies verwalten."
       }
     },
     "categories": {
@@ -148,6 +151,27 @@
       "declThirdParty": {
         "de": "Drittanbieter"
       },
+      "declSeconds": {
+        "de": "Sekunden"
+      },
+      "declMinutes": {
+        "de": "Protokoll"
+      },
+      "declHours": {
+        "de": "Std."
+      },
+      "declDays": {
+        "de": "Tage"
+      },
+      "declMonths": {
+        "de": "Monate"
+      },
+      "declYears": {
+        "de": "Jahre"
+      },
+      "declSession": {
+        "de": "Sitzung"
+      },
       "cookiesDetailsText": {
         "de": "Cookie-Details"
       },
@@ -197,7 +221,7 @@
         "de": "Ihre Anfrage wurde nicht bestätigt. Bitte versuchen Sie es erneut und wenn das Problem weiterhin besteht, wenden Sie sich an den Ladenbesitzer, um Hilfe zu erhalten"
       },
       "consentSectionTitleText": {
-        "de": "Zustimmung zur Cookie-Richtlinie"
+        "de": "Ihre Cookie-Einwilligung"
       },
       "consentSectionNoConsentText": {
         "de": "Sie haben der Cookie-Richtlinie dieser Website nicht zugestimmt."
@@ -205,8 +229,17 @@
       "consentSectionConsentedText": {
         "de": "Sie haben der Cookie-Richtlinie dieser Website zugestimmt am"
       },
+      "consentStatus": {
+        "de": "Einwilligungspräferenz"
+      },
+      "consentDate": {
+        "de": "Zustimmungsdatum"
+      },
+      "consentId": {
+        "de": "Einwilligungs-ID"
+      },
       "consentSectionChangeConsentActionText": {
-        "de": "Einwilligung widerrufen"
+        "de": "Einwilligungspräferenz ändern"
       },
       "accessSectionGDPRRequestsActionText": {
         "de": "Anfragen betroffener Personen"
@@ -283,7 +316,7 @@
       "imprintHref": "https:\/\/buntervogel-geschenke.de\/pages\/impressum",
       "close": "&#10005;",
       "target": "",
-      "logo": "<img class=\"cc-banner-logo\" style=\"height: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/6\/assets\/pandectes-logo.png?v=1667947117\" alt=\"Bunter Vogel Store\" \/>"
+      "logo": "<img class=\"cc-banner-logo\" height=\"40\" width=\"40\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/7\/assets\/pandectes-logo.png?v=1688750604\" alt=\"Bunter Vogel Store\" \/>"
     },
     "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-bottom-left-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
     "compliance": {
@@ -298,7 +331,7 @@
     "revokable": true,
     "animateRevokable": false,
     "revokableReset": false,
-    "revokableLogoUrl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/6\/assets\/pandectes-reopen-logo.png?v=1667947117",
+    "revokableLogoUrl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/7\/assets\/pandectes-reopen-logo.png?v=1688750605",
     "revokablePlacement": "bottom-left",
     "revokableMarginHorizontal": 15,
     "revokableMarginVertical": 15,
@@ -345,6 +378,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
         "purpose": {
           "de": "Wird im Zusammenhang mit der Käuferlokalisierung verwendet."
         }
@@ -356,6 +391,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
         "purpose": {
           "de": "Wird im Zusammenhang mit dem Kundenlogin verwendet."
         }
@@ -367,6 +404,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "14 day(s)",
+        "expires": 14,
+        "unit": "declSession",
         "purpose": {
           "de": "Das Cookie ist für die sichere Checkout- und Zahlungsfunktion auf der Website erforderlich. Diese Funktion wird von shopify.com bereitgestellt."
         }
@@ -378,6 +417,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
         "purpose": {
           "de": "Tracking-Einstellungen."
         }
@@ -389,6 +430,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
         "purpose": {
           "de": "Lokalisierung von Shopify-Shops"
         }
@@ -400,6 +443,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "24 hour(s)",
+        "expires": 24,
+        "unit": "declHours",
         "purpose": {
           "de": "Wird in Verbindung mit der Navigation durch eine Storefront verwendet."
         }
@@ -413,6 +458,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "14 day(s)",
+        "expires": 14,
+        "unit": "declSession",
         "purpose": {
           "de": "Verfolgt Zielseiten."
         }
@@ -424,6 +471,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "14 day(s)",
+        "expires": 14,
+        "unit": "declSession",
         "purpose": {
           "de": "Verfolgt Zielseiten."
         }
@@ -435,6 +484,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
         "purpose": {
           "de": "Shopify-Analysen."
         }
@@ -446,6 +497,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
         "purpose": {
           "de": "Shopify-Analysen."
         }
@@ -457,6 +510,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
         "purpose": {
           "de": "Shopify-Analysen."
         }
@@ -468,6 +523,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
         "purpose": {
           "de": "Shopify-Analysen."
         }
@@ -479,6 +536,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
         "purpose": {
           "de": "Shopify-Analysen in Bezug auf Marketing und Empfehlungen."
         }
@@ -490,6 +549,8 @@
         "provider": "Shopify",
         "firstParty": true,
         "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
         "purpose": {
           "de": "Shopify-Analysen in Bezug auf Marketing und Empfehlungen."
         }
@@ -536,6 +597,40 @@
 
       ],
       "blackList": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "4": [
+
+        ],
+        "8": [
+
+        ]
+      },
+      "iframesWhiteList": [
+
+      ],
+      "iframesBlackList": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "4": [
+
+        ],
+        "8": [
+
+        ]
+      },
+      "beaconsWhiteList": [
+
+      ],
+      "beaconsBlackList": {
         "1": [
 
         ],

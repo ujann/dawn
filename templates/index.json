@@ -24,7 +24,7 @@
           "disabled": true,
           "settings": {
             "button_label_1": "Produkte",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -41,7 +41,6 @@
         "image": "shopify:\/\/shop_images\/BunterVogel-Website_Banner-3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "adapt_height_first_image": true,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -93,17 +92,17 @@
         "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
-        "show_view_all": true,
-        "swipe_on_mobile": true,
         "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": true,
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -154,8 +153,8 @@
       "settings": {
         "heading": "NEU: Spieltz Party Ludo - der Spiele-Klassiker in der Party-Version",
         "heading_size": "h2",
-        "cover_image": "shopify:\/\/shop_images\/52358460011_a9dcd8ddbf_o-2.jpg",
         "video_url": "https:\/\/youtu.be\/2mLdD-2Tbxg",
+        "cover_image": "shopify:\/\/shop_images\/52358460011_a9dcd8ddbf_o-2.jpg",
         "description": "Spieltz Party Ludo für 8-10 Personen",
         "full_width": false,
         "color_scheme": "background-1",
@@ -210,9 +209,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }

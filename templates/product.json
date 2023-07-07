@@ -11,7 +11,9 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "caption": {
           "type": "text",
@@ -27,7 +29,9 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -36,7 +40,9 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -46,7 +52,9 @@
         },
         "description": {
           "type": "description",
-          "disabled": true
+          "disabled": true,
+          "settings": {
+          }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -120,10 +128,10 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "media_position": "left",
-        "gallery_layout": "thumbnail_slider",
         "media_size": "small",
         "constrain_to_viewport": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
