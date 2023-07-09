@@ -45,6 +45,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-2",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -97,6 +98,7 @@
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": false,
@@ -153,8 +155,8 @@
       "settings": {
         "heading": "NEU: Spieltz Party Ludo - der Spiele-Klassiker in der Party-Version",
         "heading_size": "h2",
+        "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/2mLdD-2Tbxg",
-        "cover_image": "shopify:\/\/shop_images\/52358460011_a9dcd8ddbf_o-2.jpg",
         "description": "Spieltz Party Ludo für 8-10 Personen",
         "full_width": false,
         "color_scheme": "background-1",
