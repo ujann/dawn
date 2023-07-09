@@ -59,10 +59,33 @@
         class="disabled"
       {% endif %}
     >
+{% comment %}
     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
+{% endcomment %}
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      {% if option.name == 'Farbe' or option.name == 'Design' %}
+        {% assign option_number = option.position | prepend:'option' %}
+        {% assign variant_found = 0 %}
+        {% for variant in product.variants %}
+          {% assign variant_option_value = variant[option_number] %}
+          {% if variant_option_value == value and variant_found == 0 %}
+            <img name="{{ value }}" src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}" style="object-fit: scale-down; min-width: 50px; max-height: 50px;"/>
+            <div class="variant-pill-image_text">{{ value }}</div>
+            {% assign variant_found = 1 %}
+            {% comment %}
+                                                    {% else %}
+                                                        !! {{ value }} != {{ variant_option_value }} ({{ option_number }})
+            {% endcomment %}
+          {% endif %}
+        {%- endfor -%}
+      {% else %}
+        {{ value }}
+      {% endif %}
+    </label>
+
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
