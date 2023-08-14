@@ -47,13 +47,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
         "collapsible-row-0": {
@@ -71,7 +66,7 @@
           "settings": {
             "heading": "Versandinformationen",
             "icon": "truck",
-            "content": "<p>Lieferzeit:<strong> <br\/>1-3 Tage<\/strong> (DE)<br\/>4-5 Tage (andere EU Länder)<\/p><p>Versandkosten:<br\/>Deutschland: € 4,95<br\/><strong>Kostenloser Versand (DE) ab 50 € Warenwert.<br\/><\/strong>Andere EU-Länder: € 7,95<\/p><p><\/p><p><\/p>",
+            "content": "<p>Lieferzeit:<strong> <br\/>1-3 Tage<\/strong> (DE)<br\/>4-5 Tage (andere EU Länder)<\/p><p>Versandkosten:<br\/>Deutschland: € 4,95<br\/><strong>Kostenloser Versand (DE) ab 50 € Warenwert.<br\/><\/strong>Andere EU-Länder: € 9,95<\/p><p><\/p><p><\/p>",
             "page": ""
           }
         },
@@ -99,6 +94,12 @@
           "type": "share",
           "settings": {
             "share_label": "Link zum Teilen kopieren"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
           }
         },
         "82767405-3313-43dd-bb37-4ddb9cc37f20": {
@@ -130,8 +131,10 @@
         "enable_sticky_info": true,
         "media_size": "small",
         "constrain_to_viewport": true,
+        "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -166,6 +169,7 @@
         "columns_desktop": 4,
         "color_scheme": "background-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
@@ -176,7 +180,6 @@
     },
     "16577241689b7232d0": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "165772416814385b6b-0": {
           "type": "featured_collection",
@@ -202,6 +205,7 @@
         "165772416814385b6b-1",
         "165772416814385b6b-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
