@@ -16,41 +16,6 @@
         "padding_bottom": 52
       }
     },
-    "35cf3221-5fcd-428f-bd70-0a8b55abe979": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h2"
-          }
-        },
-        "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-heading-1",
-        "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-button-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -65,7 +30,6 @@
   "order": [
     "main",
     "cdc5ebfc-f42d-4433-bd2d-a94fb3371d78",
-    "35cf3221-5fcd-428f-bd70-0a8b55abe979",
     "form"
   ]
 }
