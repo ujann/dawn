@@ -7,6 +7,15 @@
         "padding_bottom": 36
       }
     },
+    "cdc5ebfc-f42d-4433-bd2d-a94fb3371d78": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"text-align: center;\">\n                <p>Unser Kundenservice: info@buntervogel-geschenke.de<\/p>\n              <\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "35cf3221-5fcd-428f-bd70-0a8b55abe979": {
       "type": "rich-text",
       "blocks": {
@@ -15,12 +24,6 @@
           "settings": {
             "heading": "",
             "heading_size": "h2"
-          }
-        },
-        "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Unser Kundenservice: info@buntervogel-geschenke.de<\/p>"
           }
         },
         "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-button-1": {
@@ -37,13 +40,12 @@
       },
       "block_order": [
         "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-heading-1",
-        "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-text-1",
         "template--19213655245126__35cf3221-5fcd-428f-bd70-0a8b55abe979-button-1"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -62,6 +64,7 @@
   },
   "order": [
     "main",
+    "cdc5ebfc-f42d-4433-bd2d-a94fb3371d78",
     "35cf3221-5fcd-428f-bd70-0a8b55abe979",
     "form"
   ]
