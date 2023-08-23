@@ -10,7 +10,7 @@
     "cdc5ebfc-f42d-4433-bd2d-a94fb3371d78": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"text-align: center;\">\n                <p>Unser Kundenservice: info@buntervogel-geschenke.de<\/p>\n              <\/div>",
+        "custom_liquid": "<p style=\"text-align: center;\">Unser Kundenservice: info@buntervogel-geschenke.de<\/p>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
