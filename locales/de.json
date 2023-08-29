@@ -476,5 +476,12 @@
       "send_on": "JJJJ-MM-TT",
       "send_on_label": "Senden am (optional)"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "pay_now_button_label": "zahlungspflichtig bestellen"
+      }
+    }
   }
 }
