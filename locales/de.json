@@ -480,7 +480,7 @@
   "shopify": {
     "checkout": {
       "general": {
-        "pay_now_button_label": "zahlungspflichtig bestellen"
+        "pay_now_button_label": "Zahlungspflichtig bestellen"
       }
     }
   }
