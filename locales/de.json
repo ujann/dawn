@@ -481,11 +481,6 @@
     "checkout": {
       "general": {
         "pay_now_button_label": "Zahlungspflichtig bestellen"
-      },
-      "localized_fields": {
-        "additional_information": {
-          "title": "Mit Ihrer Bestellung akzeptieren Sie unsere AGB und bestätigen, dass Sie die Widerrufsbelehrung und das Muster-Widerrufsformular zur Kenntnis genommen haben. Informationen zum Datenschutz können Sie unserer Datenschutzerklärung entnehmen."
-        }
       }
     }
   }
