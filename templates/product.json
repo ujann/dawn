@@ -33,6 +33,13 @@
           "settings": {
           }
         },
+        "1a3b3960-6ed6-48fd-baf6-72bd52c4a80e": {
+          "type": "text",
+          "settings": {
+            "text": "Preis inkl. USt. zzgl. <a href=\"\/pages\/versandinformationen\" target=\"_blank\" title=\"Versandinformationen\">Versand<\/a>",
+            "text_style": "uppercase"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -116,6 +123,7 @@
         "caption",
         "6085d1c5-eadb-4859-bb1d-6668bc57afd7",
         "price",
+        "1a3b3960-6ed6-48fd-baf6-72bd52c4a80e",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
