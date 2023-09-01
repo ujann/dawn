@@ -88,7 +88,7 @@
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
       },
-      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Ihres Kommentars. Weitere Angaben zum Datenschutz finden Sie in unserer <a href=\"url_to_your_page\">donations<\/a>Datenschutzerklärung.",
+      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Ihres Kommentars. Weitere Angaben zum Datenschutz finden Sie in unserer Datenschutzerklärung.",
       "comment_form_title": "Hinterlasse einen Kommentar",
       "name": "Name",
       "email": "E-Mail",
