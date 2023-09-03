@@ -35,7 +35,7 @@
       ],
       "settings": {
         "color_scheme": "accent-2",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Newsletter abonnieren",
         "enable_follow_on_shop": true,
         "show_social": true,
