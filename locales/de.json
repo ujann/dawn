@@ -88,7 +88,7 @@
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
       },
-      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Ihres Kommentars. Weitere Angaben zum Datenschutz finden Sie in unserer Datenschutzerklärung.",
+      "moderated_html": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Deines Kommentars. Weitere Angaben zum Datenschutz findest Du in unserer <a href=\"https://buntervogel-geschenke.de/policies/privacy-policy\" target=\"_blank\">Datenschutzerklärung</a>.",
       "comment_form_title": "Hinterlasse einen Kommentar",
       "name": "Name",
       "email": "E-Mail",
