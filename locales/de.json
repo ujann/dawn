@@ -88,7 +88,7 @@
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
       },
-      "moderated_html": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Deines Kommentars. Weitere Angaben zum Datenschutz findest Du in unserer <a href=\"https://buntervogel-geschenke.de/policies/privacy-policy\" target=\"_blank\">Datenschutzerklärung</a>.",
+      "moderated_html": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Deines Kommentars. Weitere Angaben zum Datenschutz findest Du in unserer <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy\" target=\"_blank\">Datenschutzerklärung<\/a>.",
       "comment_form_title": "Hinterlasse einen Kommentar",
       "name": "Name",
       "email": "E-Mail",
@@ -97,7 +97,8 @@
       "back_to_blog": "Zurück zum Blog",
       "share": "Diesen Artikel teilen",
       "success": "Dein Kommentar wurde erfolgreich gepostet! Vielen Dank!",
-      "success_moderated": "Dein Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen."
+      "success_moderated": "Dein Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen.",
+      "moderated": ""
     }
   },
   "onboarding": {
@@ -484,6 +485,11 @@
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten (Ihre E-Mail-Adresse wird nur genutzt, um Ihnen unseren Newsletter zuzusenden. Auf unsere Datenschutzerklärung wird insoweit verwiesen. Sie können sich jederzeit wieder von unserem Newsletter abmelden.)"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "TEST"
+        }
       }
     }
   }
