@@ -485,11 +485,6 @@
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten (Ihre E-Mail-Adresse wird nur genutzt, um Ihnen unseren Newsletter zuzusenden. Auf unsere Datenschutzerklärung wird insoweit verwiesen. Sie können sich jederzeit wieder von unserem Newsletter abmelden.)"
-      },
-      "localized_fields": {
-        "additional_information": {
-          "title": "TEST"
-        }
       }
     }
   }
