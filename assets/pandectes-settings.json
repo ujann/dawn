@@ -1,11 +1,11 @@
 {
   "store": {
-    "plan": "basic",
+    "plan": null,
     "theme": "dawn\/10.0.0-buntervogel",
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1695084123,
+  "tsPublished": 1695084141,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -376,16 +376,221 @@
   },
   "cookies": {
     "0": [
-
+      {
+        "name": "secure_customer_sig",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Used in connection with customer login."
+        }
+      },
+      {
+        "name": "cart_currency",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "14 day(s)",
+        "expires": 14,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Used in connection with shopping cart."
+        }
+      },
+      {
+        "name": "localization",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Shopify store localization"
+        }
+      },
+      {
+        "name": "_cmp_a",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "24 hour(s)",
+        "expires": 24,
+        "unit": "declHours",
+        "purpose": {
+          "de": "Used for managing customer privacy settings."
+        }
+      },
+      {
+        "name": "_tracking_consent",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Tracking preferences."
+        }
+      },
+      {
+        "name": "_secure_session_id",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "24 hour(s)",
+        "expires": 24,
+        "unit": "declHours",
+        "purpose": {
+          "de": "Used in connection with navigation through a storefront."
+        }
+      },
+      {
+        "name": "keep_alive",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Used in connection with buyer localization."
+        }
+      }
     ],
     "1": [
 
     ],
     "2": [
-
+      {
+        "name": "_y",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_shopify_y",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_s",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_shopify_sa_t",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Shopify analytics relating to marketing & referrals."
+        }
+      },
+      {
+        "name": "_orig_referrer",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "14 day(s)",
+        "expires": 14,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Tracks landing pages."
+        }
+      },
+      {
+        "name": "_shopify_sa_p",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Shopify analytics relating to marketing & referrals."
+        }
+      },
+      {
+        "name": "_shopify_s",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_landing_page",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "14 day(s)",
+        "expires": 14,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Tracks landing pages."
+        }
+      }
     ],
     "4": [
-
+      {
+        "name": "_fbp",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "90 day(s)",
+        "expires": 90,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Cookie is placed by Facebook to track visits across websites."
+        }
+      }
     ],
     "8": [
 
