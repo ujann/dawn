@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1695085879,
+  "tsPublished": 1695086083,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -23,10 +23,10 @@
   "texts": {
     "managed": {
       "headerText": {
-        "de": "Wir respektieren deine Privatsphäre"
+        "de": "Cookie\/Pixel-Banner"
       },
       "consentText": {
-        "de": "Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten."
+        "de": "Wir verwenden auf dieser Website Cookies bzw. Pixel. Diese dienen dazu, Inhalte und Anzeigen zu personalisieren. Zudem können wir dadurch die Funktionen sozialer Medien anbieten und Zugriffe auf unsere Website analysieren. Die Art Ihrer Verwendung unserer Website wird an unsere Partner für Werbung, soziale Medien und Analysen weitergegeben. Weitere Information, welche Cookies\/Pixel verwendet werden, finden Sie in unserer Datenschutzerklärung."
       },
       "dismissButtonText": {
         "de": "Okay"
@@ -325,7 +325,7 @@
     },
     "type": "custom",
     "layouts": {
-      "basic": "{{logo}}{{messagelink}}{{compliance}}"
+      "basic": "{{logo}}{{header}}{{messagelink}}{{compliance}}"
     },
     "position": "overlay",
     "theme": "classic",
