@@ -484,7 +484,7 @@
         "pay_now_button_label": "Zahlungspflichtig bestellen"
       },
       "marketing": {
-        "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten (deine E-Mail-Adresse wird nur genutzt, um dir unseren Newsletter zuzusenden. Auf unsere Datenschutzerklärung wird insoweit verwiesen - der Link dazu befindet sich am unteren Rand dieser Seite. Du kannst dich jederzeit wieder von unserem Newsletter abmelden.)"
+        "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten (deine E-Mail-Adresse wird nur genutzt, um dir unseren Newsletter zuzusenden. Auf unsere Datenschutzerklärung wird insoweit verwiesen - der Link dazu befindet sich ganz am Ende dieser Seite. Du kannst dich jederzeit wieder von unserem Newsletter abmelden.)"
       }
     }
   }
