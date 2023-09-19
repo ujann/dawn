@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1695084493,
+  "tsPublished": 1695084834,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -313,7 +313,7 @@
       }
     },
     "content": {
-      "href": "https:\/\/buntervogel-geschenke.de\/pages\/datenschutzerklarung",
+      "href": "https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy",
       "imprintHref": "https:\/\/buntervogel-geschenke.de\/pages\/impressum",
       "close": "&#10005;",
       "target": "",
