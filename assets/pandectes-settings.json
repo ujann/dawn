@@ -5,11 +5,12 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1688941294,
+  "tsPublished": 1695084123,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
-    "showDateGenerated": false
+    "declIntroText": "Wir verwenden Cookies, um die Funktionalität der Website zu optimieren, die Leistung zu analysieren und Ihnen ein personalisiertes Erlebnis zu bieten. Einige Cookies sind für den ordnungsgemäßen Betrieb der Website unerlässlich. Diese Cookies können nicht deaktiviert werden. In diesem Fenster können Sie Ihre Präferenzen für Cookies verwalten.",
+    "showDateGenerated": true
   },
   "language": {
     "languageMode": "Single",
@@ -93,19 +94,19 @@
     },
     "categories": {
       "strictlyNecessaryCookiesTitleText": {
-        "de": "Unbedingt notwendige Cookies"
+        "de": "Unbedingt erforderlich"
       },
       "functionalityCookiesTitleText": {
         "de": "Funktionale Cookies"
       },
       "performanceCookiesTitleText": {
-        "de": "Leistungs-Cookies"
+        "de": "Performance-Cookies"
       },
       "targetingCookiesTitleText": {
         "de": "Targeting-Cookies"
       },
       "unclassifiedCookiesTitleText": {
-        "de": "Nicht klassifizierte Cookies"
+        "de": "Unklassifizierte Cookies"
       },
       "strictlyNecessaryCookiesDescriptionText": {
         "de": "Diese Cookies sind unerlässlich, damit Sie sich auf der Website bewegen und ihre Funktionen nutzen können, z. B. den Zugriff auf sichere Bereiche der Website. Ohne diese Cookies kann die Website nicht richtig funktionieren."
@@ -120,7 +121,7 @@
         "de": "Diese Cookies können von unseren Werbepartnern über unsere Website gesetzt werden. Sie können von diesen Unternehmen verwendet werden, um ein Profil Ihrer Interessen zu erstellen und Ihnen relevante Werbung auf anderen Websites anzuzeigen. Sie speichern keine direkten personenbezogenen Daten, sondern basieren auf der eindeutigen Identifizierung Ihres Browsers und Ihres Internetgeräts. Wenn Sie diese Cookies nicht zulassen, erleben Sie weniger zielgerichtete Werbung."
       },
       "unclassifiedCookiesDescriptionText": {
-        "de": "Nicht klassifizierte Cookies sind Cookies, die wir gerade zusammen mit den Anbietern einzelner Cookies klassifizieren."
+        "de": "Unklassifizierte Cookies sind Cookies, die wir gerade zusammen mit den Anbietern einzelner Cookies klassifizieren."
       }
     },
     "auto": {
@@ -312,8 +313,8 @@
       }
     },
     "content": {
-      "href": "https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy",
-      "imprintHref": "https:\/\/buntervogel-geschenke.de\/pages\/impressum",
+      "href": "https:\/\/bunter-vogel-store.myshopify.com\/policies\/privacy-policy",
+      "imprintHref": "\/",
       "close": "&#10005;",
       "target": "",
       "logo": "<img class=\"cc-banner-logo\" height=\"40\" width=\"40\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/7\/assets\/pandectes-logo.png?v=1688750604\" alt=\"Bunter Vogel Store\" \/>"
@@ -345,19 +346,23 @@
   "geolocation": {
     "brOnly": false,
     "caOnly": false,
+    "chOnly": false,
     "euOnly": false,
-    "canadaOnly": false
+    "jpOnly": false,
+    "thOnly": false,
+    "canadaOnly": false,
+    "globalVisibility": true
   },
   "dsr": {
     "guestsSupport": false,
     "accessSectionDownloadReportAuto": false
   },
   "banner": {
-    "resetTs": 1667947115,
+    "resetTs": 1695084120,
     "extraCss": "        .cc-banner-logo {max-width: 24em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 24em!important;width: 24em!important;}}    .cc-message, .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    .pd-cp-btn{}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 \/ 20%);}  ",
     "customJavascript": null,
     "showPoweredBy": false,
-    "isActive": true,
+    "isActive": false,
     "implicitSavePreferences": false,
     "cookieIcon": false,
     "blockBots": false,
@@ -371,190 +376,10 @@
   },
   "cookies": {
     "0": [
-      {
-        "name": "keep_alive",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
-        "purpose": {
-          "de": "Wird im Zusammenhang mit der Käuferlokalisierung verwendet."
-        }
-      },
-      {
-        "name": "secure_customer_sig",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "1 year(s)",
-        "expires": 1,
-        "unit": "declYears",
-        "purpose": {
-          "de": "Wird im Zusammenhang mit dem Kundenlogin verwendet."
-        }
-      },
-      {
-        "name": "cart_currency",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "14 day(s)",
-        "expires": 14,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Das Cookie ist für die sichere Checkout- und Zahlungsfunktion auf der Website erforderlich. Diese Funktion wird von shopify.com bereitgestellt."
-        }
-      },
-      {
-        "name": "_tracking_consent",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "1 year(s)",
-        "expires": 1,
-        "unit": "declYears",
-        "purpose": {
-          "de": "Tracking-Einstellungen."
-        }
-      },
-      {
-        "name": "localization",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "1 year(s)",
-        "expires": 1,
-        "unit": "declYears",
-        "purpose": {
-          "de": "Lokalisierung von Shopify-Shops"
-        }
-      },
-      {
-        "name": "_secure_session_id",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "24 hour(s)",
-        "expires": 24,
-        "unit": "declHours",
-        "purpose": {
-          "de": "Wird in Verbindung mit der Navigation durch eine Storefront verwendet."
-        }
-      }
+
     ],
     "1": [
-      {
-        "name": "_landing_page",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "14 day(s)",
-        "expires": 14,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Verfolgt Zielseiten."
-        }
-      },
-      {
-        "name": "_orig_referrer",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "14 day(s)",
-        "expires": 14,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Verfolgt Zielseiten."
-        }
-      },
-      {
-        "name": "_shopify_s",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
-        "purpose": {
-          "de": "Shopify-Analysen."
-        }
-      },
-      {
-        "name": "_shopify_y",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "1 year(s)",
-        "expires": 1,
-        "unit": "declYears",
-        "purpose": {
-          "de": "Shopify-Analysen."
-        }
-      },
-      {
-        "name": "_s",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
-        "purpose": {
-          "de": "Shopify-Analysen."
-        }
-      },
-      {
-        "name": "_y",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "1 year(s)",
-        "expires": 1,
-        "unit": "declYears",
-        "purpose": {
-          "de": "Shopify-Analysen."
-        }
-      },
-      {
-        "name": "_shopify_sa_t",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
-        "purpose": {
-          "de": "Shopify-Analysen in Bezug auf Marketing und Empfehlungen."
-        }
-      },
-      {
-        "name": "_shopify_sa_p",
-        "domain": ".buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
-        "purpose": {
-          "de": "Shopify-Analysen in Bezug auf Marketing und Empfehlungen."
-        }
-      }
+
     ],
     "2": [
 
@@ -591,6 +416,7 @@
       "cmp": false,
       "ccpa": false
     },
+    "gpcIsActive": false,
     "defaultBlocked": 7,
     "patterns": {
       "whiteList": [
