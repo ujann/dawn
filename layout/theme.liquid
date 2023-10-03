@@ -21,6 +21,7 @@
         if (single_cookie.startsWith(cookie_name)) {
           console.log("accepted us_services found", single_cookie.substring(cookie_name.length, single_cookie.length));
         }else{
+          console.log("no accepted us_services found");
           location.href = "https://google.de";
         }
       }
