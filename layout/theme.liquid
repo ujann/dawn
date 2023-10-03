@@ -13,6 +13,18 @@
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
+    <script type="javascript">
+      const all_cookies = document.cookie.split("; ");
+      const cookie_name = "_accept_us_services=";
+      for (let i = 0; i < all_cookies.length; i++) {
+        let single_cookie = all_cookies[i];
+        if (single_cookie.startsWith(cookie_name)) {
+          console.log("accepted us_services found", single_cookie.substring(cookie_name.length, single_cookie.length));
+        }else{
+          location.href = "https://google.de";
+        }
+      }
+    </script>
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
