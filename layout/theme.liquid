@@ -244,7 +244,7 @@
             if (single_cookie.startsWith(COOKIE_NAME)) {
               console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do", single_cookie.substring(COOKIE_NAME.length, single_cookie.length));
             }else{
-              console.log("COOKIE_NAME: no accepted us_services found -> redirect to accept page");
+              console.log("US_COOKIE: no accepted us_services found -> redirect to accept page");
               const currentUrl = encodeURIComponent(location.href);
               const referrer = encodeURIComponent(document.referrer);
               location.href = "https://accept.buntervogel-geschenke.de?dest=" + currentUrl + "&ref=" + referrer;
