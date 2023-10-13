@@ -244,7 +244,7 @@
         if (accepted === "true"){
           const referer = params.get("ref");
           console.log("US_COOKIE: us_service_accepted was provided as query url, so we set the cookie; referer was " + referer);
-          document.cookie = COOKIE_NAME + "=true";
+          document.cookie = COOKIE_NAME + "=true;max-age=31536000";
         }else{
           if( findCookie(COOKIE_NAME) ){
             console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do", single_cookie.substring(COOKIE_NAME.length, single_cookie.length));
