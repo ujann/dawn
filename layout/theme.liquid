@@ -230,8 +230,7 @@
       function findCookie(cookie_name){
         const all_cookies = document.cookie.split("; ");
         for (let i = 0; i < all_cookies.length; i++) {
-          let single_cookie = all_cookies[i];
-          if (single_cookie.startsWith(cookie_name)) {
+          if (all_cookies[i].startsWith(cookie_name)) {
             return true;
           }
         }
@@ -247,7 +246,7 @@
           document.cookie = COOKIE_NAME + "=true;max-age=31536000";
         }else{
           if( findCookie(COOKIE_NAME) ){
-            console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do", single_cookie.substring(COOKIE_NAME.length, single_cookie.length));
+            console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do");
           } else {
             console.log("US_COOKIE: no accepted us_services found -> redirect to accept page");
             const currentUrl = encodeURIComponent(location.href);
