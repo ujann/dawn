@@ -227,6 +227,16 @@
       }
     </script>
     <script><!-- US-Service-cookie already accepted? -->
+      function findCookie(cookie_name){
+        const all_cookies = document.cookie.split("; ");
+        for (let i = 0; i < all_cookies.length; i++) {
+          let single_cookie = all_cookies[i];
+          if (single_cookie.startsWith(cookie_name)) {
+            return true;
+          }
+        }
+        return false;
+      }
       (function() {
         const params = new URLSearchParams(document.location.search);
         const accepted = params.get("us_service_accepted");
@@ -238,17 +248,13 @@
           document.cookie = COOKIE_NAME + "=true";
           location.href = destination;
         }else{
-          const all_cookies = document.cookie.split("; ");
-          for (let i = 0; i < all_cookies.length; i++) {
-            let single_cookie = all_cookies[i];
-            if (single_cookie.startsWith(COOKIE_NAME)) {
-              console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do", single_cookie.substring(COOKIE_NAME.length, single_cookie.length));
-            }else{
-              console.log("US_COOKIE: no accepted us_services found -> redirect to accept page");
-              const currentUrl = encodeURIComponent(location.href);
-              const referrer = encodeURIComponent(document.referrer);
-              location.href = "https://accept.buntervogel-geschenke.de?dest=" + currentUrl + "&ref=" + referrer;
-            }
+          if( findCookie(COOKIE_NAME) ){
+            console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do", single_cookie.substring(COOKIE_NAME.length, single_cookie.length));
+          } else {
+            console.log("US_COOKIE: no accepted us_services found -> redirect to accept page");
+            const currentUrl = encodeURIComponent(location.href);
+            const referrer = encodeURIComponent(document.referrer);
+            location.href = "https://accept.buntervogel-geschenke.de?dest=" + currentUrl + "&ref=" + referrer;
           }
         }
       })();
