@@ -226,18 +226,32 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-    <script>
-      const all_cookies = document.cookie.split("; ");
-      const cookie_name = "_accept_us_services=";
-      for (let i = 0; i < all_cookies.length; i++) {
-        let single_cookie = all_cookies[i];
-        if (single_cookie.startsWith(cookie_name)) {
-          console.log("accepted us_services found", single_cookie.substring(cookie_name.length, single_cookie.length));
+    <script><!-- US-Service-cookie already accepted? -->
+      (function() {
+        const params = new URLSearchParams(document.location.search);
+        const accepted = params.get("us_service_accepted");
+        const COOKIE_NAME = "_accept_us_services=";
+        if (accepted === "true"){
+          const referer = params.get("ref");
+          const destination = params.get("dest");
+          console.log("US_COOKIE: us_service_accepted was provided as query url, so we set the cookie; referer was " + referer);
+          document.cookie = COOKIE_NAME + "=true";
+          location.href = destination;
         }else{
-          console.log("no accepted us_services found");
-          location.href = "https://google.de";
+          const all_cookies = document.cookie.split("; ");
+          for (let i = 0; i < all_cookies.length; i++) {
+            let single_cookie = all_cookies[i];
+            if (single_cookie.startsWith(COOKIE_NAME)) {
+              console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do", single_cookie.substring(COOKIE_NAME.length, single_cookie.length));
+            }else{
+              console.log("COOKIE_NAME: no accepted us_services found -> redirect to accept page");
+              const currentUrl = encodeURIComponent(location.href);
+              const referrer = encodeURIComponent(document.referrer);
+              location.href = "https://accept.buntervogel-geschenke.de?dest=" + currentUrl + "&ref=" + referrer;
+            }
+          }
         }
-      }
+      })();
     </script>
 
   </head>
