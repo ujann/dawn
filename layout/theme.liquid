@@ -243,10 +243,8 @@
         const COOKIE_NAME = "_accept_us_services=";
         if (accepted === "true"){
           const referer = params.get("ref");
-          const destination = params.get("dest");
           console.log("US_COOKIE: us_service_accepted was provided as query url, so we set the cookie; referer was " + referer);
           document.cookie = COOKIE_NAME + "=true";
-          location.href = destination;
         }else{
           if( findCookie(COOKIE_NAME) ){
             console.log("US_COOKIE: " + COOKIE_NAME + " found, nothing to do", single_cookie.substring(COOKIE_NAME.length, single_cookie.length));
