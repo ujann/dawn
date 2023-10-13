@@ -240,7 +240,7 @@
       (function() {
         const params = new URLSearchParams(document.location.search);
         const accepted = params.get("us_service_accepted");
-        const COOKIE_NAME = "_accept_us_services=";
+        const COOKIE_NAME = "_accept_us_services";
         if (accepted === "true"){
           const referer = params.get("ref");
           console.log("US_COOKIE: us_service_accepted was provided as query url, so we set the cookie; referer was " + referer);
