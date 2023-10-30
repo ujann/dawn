@@ -485,9 +485,6 @@
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten (deine E-Mail-Adresse wird nur genutzt, um dir unseren Newsletter zuzusenden. Auf unsere Datenschutzerklärung wird insoweit verwiesen - der Link dazu befindet sich ganz am Ende dieser Seite. Du kannst dich jederzeit wieder von unserem Newsletter abmelden.)"
-      },
-      "review": {
-        "review_title": "Mit Ihrer Bestellung akzeptieren Sie unsere AGB und bestätigen, dass Sie die Widerrufsbelehrung und das Muster-Widerrufsformular zur Kenntnis genommen haben. Informationen zum Datenschutz können Sie unserer Datenschutzerklärung entnehmen. Sämtliche Dokumente können Sie den Hyperlinks im Footer entnehmen."
       }
     }
   }
