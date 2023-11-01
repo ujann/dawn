@@ -487,7 +487,7 @@
         "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten (deine E-Mail-Adresse wird nur genutzt, um dir unseren Newsletter zuzusenden. Auf unsere Datenschutzerklärung wird insoweit verwiesen - der Link dazu befindet sich ganz am Ende dieser Seite. Du kannst dich jederzeit wieder von unserem Newsletter abmelden.)"
       },
       "review": {
-        "review_notice_html": "<p style=\"font-size:15px;color:#0B1235;\">Mit Ihrer Bestellung akzeptieren Sie unsere <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/terms-of-service\" target=\"_blank\">AGB<\/a> und bestätigen, dass Sie die <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/refund-policy\" target=\"_blank\">Widerrufsbelehrung und das Muster-Widerrufsformular<\/a> zur Kenntnis genommen haben. Informationen zum Datenschutz können Sie unserer <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy\" target=\"_blank\">Datenschutzerklärung<\/a> entnehmen.<\/p><br> <hr style=\"height:3px\">"
+        "review_notice_html": "<p style=\"font-size:15px;color:#0B1235;\">Mit Ihrer Bestellung akzeptieren Sie unsere <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/terms-of-service\" target=\"_blank\">AGB<\/a> und bestätigen, dass Sie die <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/refund-policy\" target=\"_blank\">Widerrufsbelehrung und das Muster-Widerrufsformular<\/a> zur Kenntnis genommen haben. Informationen zum Datenschutz können Sie unserer <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy\" target=\"_blank\">Datenschutzerklärung<\/a> entnehmen.<\/p><br> <hr style=\"height:1px\">"
       }
     }
   }
