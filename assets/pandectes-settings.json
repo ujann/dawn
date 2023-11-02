@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1695086083,
+  "tsPublished": 1698967639,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -26,7 +26,7 @@
         "de": "Cookie\/Pixel-Banner"
       },
       "consentText": {
-        "de": "Wir verwenden auf dieser Website Cookies bzw. Pixel. Diese dienen dazu, Inhalte und Anzeigen zu personalisieren. Zudem können wir dadurch die Funktionen sozialer Medien anbieten und Zugriffe auf unsere Website analysieren. Die Art Ihrer Verwendung unserer Website wird an unsere Partner für Werbung, soziale Medien und Analysen weitergegeben. Weitere Information, welche Cookies\/Pixel verwendet werden, finden Sie in unserer Datenschutzerklärung."
+        "de": "Wir verwenden auf dieser Website Cookies bzw. Pixel. Diese dienen dazu, Inhalte und Anzeigen zu personalisieren. Zudem können wir dadurch die Funktionen sozialer Medien anbieten und Zugriffe auf unsere Website analysieren. Die Art Ihrer Verwendung unserer Website wird an unsere Partner für Werbung, soziale Medien und Analysen weitergegeben. Weitere Information, welche Cookies\/Pixel verwendet werden, finden Sie in unserer Datenschutzerklärung.\nMit der Nutzung unseres Shopify-Systems stimmen Sie gem. Art. 49 I S. 1 a DSGVO auch zu, dass Ihre Daten in den USA verarbeitet werden. Die USA werden vom Europäischen Gerichtshof als ein Land mit einem nach EU-Standards unzureichendem Datenschutzniveau eingeschätzt. Es besteht insbesondere das Risiko, dass Ihre Daten durch US-Behörden, zu Kontroll- und zu Überwachungszwecken, möglicherweise auch ohne Rechtsbehelfsmöglichkeiten, verarbeitet werden können. Weitere Informationen können Sie unserer Datenschutzerklärung entnehmen."
       },
       "dismissButtonText": {
         "de": "Okay"
@@ -278,7 +278,8 @@
     "cookie": {
       "name": "_pandectes_gdpr",
       "expiryDays": 365,
-      "secure": true
+      "secure": true,
+      "domain": ""
     },
     "dismissOnScroll": false,
     "dismissOnWindowClick": false,
@@ -319,15 +320,15 @@
       "target": "",
       "logo": "<img class=\"cc-banner-logo\" height=\"40\" width=\"40\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/7\/assets\/pandectes-logo.png?v=1688750604\" alt=\"Bunter Vogel Store\" \/>"
     },
-    "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-overlay-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
+    "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-bottom-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
     "compliance": {
       "custom": "<div class=\"cc-compliance cc-highlight\">{{preferences}}{{allow}}{{deny}}<\/div>"
     },
     "type": "custom",
     "layouts": {
-      "basic": "{{logo}}{{header}}{{messagelink}}{{compliance}}"
+      "basic": "{{logo}}{{messagelink}}{{compliance}}"
     },
-    "position": "overlay",
+    "position": "bottom",
     "theme": "classic",
     "revokable": true,
     "animateRevokable": false,
@@ -359,15 +360,16 @@
   },
   "banner": {
     "resetTs": 1695084120,
-    "extraCss": "        .cc-banner-logo {max-width: 32em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 32em!important;width: 32em!important;}}    .cc-message, .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;-webkit-transition: opacity 1s ease;  transition: opacity 1s ease;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    .pd-cp-btn{background-color:#000000;color:#FFFFFF!important;}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 \/ 20%);}  ",
+    "extraCss": "        .cc-banner-logo {max-width: 32em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 32em!important;width: 32em!important;}}    .cc-message, .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    button.pd-cp-btn, a.pd-cp-btn{background-color:#000000;color:#FFFFFF!important;}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 \/ 20%);}  ",
     "customJavascript": null,
     "showPoweredBy": false,
+    "hybridStrict": false,
+    "cookiesBlockedByDefault": "7",
     "isActive": true,
     "implicitSavePreferences": false,
     "cookieIcon": false,
     "blockBots": false,
     "showCookiesDetails": true,
-    "cookiesBlockedByDefault": "7",
     "hasTransition": true,
     "blockingPage": false,
     "showOnlyLandingPage": false,
