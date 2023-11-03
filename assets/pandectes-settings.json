@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1698967639,
+  "tsPublished": 1699053267,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -468,6 +468,45 @@
         "purpose": {
           "de": "Used in connection with buyer localization."
         }
+      },
+      {
+        "name": "_pandectes_gdpr",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Pandectes",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Wird für die Funktionalität des Cookies-Zustimmungsbanners verwendet."
+        }
+      },
+      {
+        "name": "cart_sig",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Shopify-Analysen."
+        }
+      },
+      {
+        "name": "cookietest",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Used to ensure our systems are working correctly."
+        }
       }
     ],
     "1": [
@@ -577,6 +616,32 @@
         "purpose": {
           "de": "Tracks landing pages."
         }
+      },
+      {
+        "name": "_shopify_d",
+        "domain": "de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Shopify-Analysen."
+        }
+      },
+      {
+        "name": "_shopify_d",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Shopify-Analysen."
+        }
       }
     ],
     "4": [
@@ -595,7 +660,136 @@
       }
     ],
     "8": [
-
+      {
+        "name": "ppms_privacy_36c66cb4-ce19-4533-8504-f720a01f8b07",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "_pk_id.36c66cb4-ce19-4533-8504-f720a01f8b07.740c",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "_pk_ses.36c66cb4-ce19-4533-8504-f720a01f8b07.740c",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "wpm-domain-test",
+        "domain": "de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "lastExternalReferrer",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "wpm-domain-test",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "lastExternalReferrerTime",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "ppms_webstorage",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "_boomr_clss",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "local-storage-test",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": ""
+        }
+      }
     ]
   },
   "blocker": {
