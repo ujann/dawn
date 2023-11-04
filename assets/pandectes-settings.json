@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699141977,
+  "tsPublished": 1699142228,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -644,6 +644,19 @@
         }
       },
       {
+        "name": "_pk_id.36c66cb4-ce19-4533-8504-f720a01f8b07.740c",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Piwik",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Piwik Analytics"
+        }
+      },
+      {
         "name": "stg_traffic_source_priority",
         "domain": "buntervogel-geschenke.de",
         "path": "\/",
@@ -701,19 +714,6 @@
     "8": [
       {
         "name": "ppms_privacy_36c66cb4-ce19-4533-8504-f720a01f8b07",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Unknown",
-        "firstParty": true,
-        "retention": "1 day(s)",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": ""
-        }
-      },
-      {
-        "name": "_pk_id.36c66cb4-ce19-4533-8504-f720a01f8b07.740c",
         "domain": "buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Unknown",
