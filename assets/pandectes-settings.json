@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699142228,
+  "tsPublished": 1699142283,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -729,13 +729,13 @@
         "name": "_pk_ses.36c66cb4-ce19-4533-8504-f720a01f8b07.740c",
         "domain": "buntervogel-geschenke.de",
         "path": "\/",
-        "provider": "Unknown",
+        "provider": "Piwik",
         "firstParty": true,
         "retention": "1 day(s)",
         "expires": 1,
         "unit": "declSession",
         "purpose": {
-          "de": ""
+          "de": "Piwik Analytics"
         }
       },
       {
