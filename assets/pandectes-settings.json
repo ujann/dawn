@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699142547,
+  "tsPublished": 1699143110,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -683,6 +683,19 @@
         }
       },
       {
+        "name": "lastExternalReferrer",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Ermittelt, wie der Nutzer die Website erreicht hat, indem seine letzte URL-Adresse registriert wird."
+        }
+      },
+      {
         "name": "ppms_webstorage",
         "domain": "https:\/\/buntervogel-geschenke.de",
         "path": "\/",
@@ -751,19 +764,6 @@
       }
     ],
     "8": [
-      {
-        "name": "lastExternalReferrer",
-        "domain": "https:\/\/buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Unknown",
-        "firstParty": true,
-        "retention": "Persistent",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": ""
-        }
-      },
       {
         "name": "lastExternalReferrerTime",
         "domain": "https:\/\/buntervogel-geschenke.de",
