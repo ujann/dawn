@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699142454,
+  "tsPublished": 1699142486,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -745,19 +745,6 @@
         "provider": "Unknown",
         "firstParty": true,
         "retention": "Persistent",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": ""
-        }
-      },
-      {
-        "name": "wpm-domain-test",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Unknown",
-        "firstParty": true,
-        "retention": "Session",
         "expires": 1,
         "unit": "declSession",
         "purpose": {
