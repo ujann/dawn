@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699480512,
+  "tsPublished": 1699480529,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -518,7 +518,20 @@
         "expires": 1,
         "unit": "declSession",
         "purpose": {
-          "de": ""
+          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
+        }
+      },
+      {
+        "name": "wpm-domain-test",
+        "domain": "de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
         }
       }
     ],
@@ -712,19 +725,6 @@
       }
     ],
     "8": [
-      {
-        "name": "wpm-domain-test",
-        "domain": "de",
-        "path": "\/",
-        "provider": "Unknown",
-        "firstParty": false,
-        "retention": "Session",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": ""
-        }
-      },
       {
         "name": "local-storage-test",
         "domain": "https:\/\/buntervogel-geschenke.de",
