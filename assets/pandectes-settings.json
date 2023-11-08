@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699478144,
+  "tsPublished": 1699479837,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -641,32 +641,6 @@
         "unit": "declSession",
         "purpose": {
           "de": "Shopify-Analysen."
-        }
-      },
-      {
-        "name": "ppms_privacy_36c66cb4-ce19-4533-8504-f720a01f8b07",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Piwik",
-        "firstParty": true,
-        "retention": "1 day(s)",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Consent"
-        }
-      },
-      {
-        "name": "_pk_id.36c66cb4-ce19-4533-8504-f720a01f8b07.740c",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Piwik",
-        "firstParty": true,
-        "retention": "1 day(s)",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Piwik Analytics"
         }
       },
       {
