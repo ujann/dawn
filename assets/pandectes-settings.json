@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699483339,
+  "tsPublished": 1699483641,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -26,7 +26,7 @@
         "de": "Cookie\/Pixel-Banner"
       },
       "consentText": {
-        "de": "Wir verwenden auf dieser Website Cookies bzw. Pixel. Diese dienen dazu, Inhalte und Anzeigen zu personalisieren. Zudem können wir dadurch die Funktionen sozialer Medien anbieten und Zugriffe auf unsere Website analysieren. Die Art Ihrer Verwendung unserer Website wird an unsere Partner für Werbung, soziale Medien und Analysen weitergegeben. Weitere Information, welche Cookies\/Pixel verwendet werden, finden Sie in unserer Datenschutzerklärung.\nMit der Nutzung unseres Shopify-Systems stimmen Sie gem. Art. 49 I S. 1 a DSGVO auch zu, dass Ihre Daten in den USA verarbeitet werden. Die USA werden vom Europäischen Gerichtshof als ein Land mit einem nach EU-Standards unzureichendem Datenschutzniveau eingeschätzt. Es besteht insbesondere das Risiko, dass Ihre Daten durch US-Behörden, zu Kontroll- und zu Überwachungszwecken, möglicherweise auch ohne Rechtsbehelfsmöglichkeiten, verarbeitet werden können. Weitere Informationen können Sie unserer Datenschutzerklärung entnehmen."
+        "de": "Wir verwenden auf dieser Website Cookies und Pixel um Inhalte und Anzeigen zu personalisieren, Funktionen sozialer Medien anzubieten und Zugriffe auf unsere Website zu analysieren. Die Art Ihrer Verwendung unserer Website wird an unsere Partner für Werbung, soziale Medien und Analysen weitergegeben. Weitere Information, welche Cookies\/Pixel verwendet werden, finden Sie in unserer Datenschutzerklärung.\nMit der Nutzung unseres Shopify-Systems stimmen Sie gem. Art. 49 I S. 1 a DSGVO auch zu, dass Ihre Daten in den USA verarbeitet werden. Die USA werden vom Europäischen Gerichtshof als ein Land mit einem nach EU-Standards unzureichenden Datenschutzniveau eingeschätzt. Es besteht das Risiko, dass Ihre Daten durch US-Behörden, zu Kontroll- und zu Überwachungszwecken, möglicherweise auch ohne Rechtsbehelfsmöglichkeiten, verarbeitet werden können. Weitere Informationen können Sie unserer Datenschutzerklärung entnehmen."
       },
       "dismissButtonText": {
         "de": "Okay"
