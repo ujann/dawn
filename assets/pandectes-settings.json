@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1699479894,
+  "tsPublished": 1699479902,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -680,19 +680,6 @@
         "unit": "declSession",
         "purpose": {
           "de": "Anonymisierte Daten, um die Effizienz der Website bezüglich load times, errors, User Interaktionen und Seiten Navigationen zu analysieren."
-        }
-      },
-      {
-        "name": "stg_last_interaction",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Piwik",
-        "firstParty": true,
-        "retention": "1 day(s)",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Piwik Tag Manager"
         }
       }
     ],
