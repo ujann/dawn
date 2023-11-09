@@ -2,6 +2,24 @@
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
     <script type="text/javascript">
+      var fp_disableStr = 'fb-pixel-disabled';
+      if (document.cookie.indexOf(fp_disableStr + '=true') > -1) {
+        window[fp_disableStr] = true;
+        console.log("Facebook-Pixel ist deaktiviert - Cookie erkannt");
+      } else {
+        if (navigator.doNotTrack !== '1') {
+        // fb pixel erlaubt:
+          console.log("Facebook-Pixel Code geladen");
+        }
+      }
+      if(location.search === '?fb-opt-out') {
+        document.cookie = fp_disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[fp_disableStr] = true;
+        window.alert("Facebook-Pixel ist zukünftig deaktiviert");
+        location.href = location.protocol + '//' + location.host + location.pathname;
+      }
+    </script>
+    <script type="text/javascript">
       (function(window, document, dataLayerName, id) {
         window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
         function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
