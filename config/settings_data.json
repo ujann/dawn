@@ -167,11 +167,11 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#0b1235",
+          "background": "#003657",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#121212",
+          "button_label": "#027fa0",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
