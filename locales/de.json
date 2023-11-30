@@ -306,7 +306,7 @@
     },
     "collection_template": {
       "title": "Kategorie",
-      "empty": "Keine Produkte gefunden",
+      "empty": "",
       "use_fewer_filters_html": "&nbsp <br> Wir erweitern unser Sortiment! Demnächst ist auch diese Kategorie gefüllt. <br> Suchst du etwas Bestimmtes? Kontaktiere uns per Mail: <a href:\"mailto:info@buntervogel-geschenke.de\">info@buntervogel-geschenke.de<\/a>"
     },
     "video": {
