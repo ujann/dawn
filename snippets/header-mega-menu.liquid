@@ -51,8 +51,8 @@
                             {%- if childlink.links != blank -%}
                                 <ul class="list-unstyled" role="list">
                                     {%- for grandchildlink in childlink.links -%}
-                                      {% assign first_char = grandchildlink.title | slice: 0 %}
-                                      {% if first_char  != 'x'  %}
+                                      {% assign first_grandchild_char = grandchildlink.title | slice: 0 %}
+                                      {% if first_grandchild_char  != 'x'  %}
                                         <li>
                                             <a
                                                     id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
