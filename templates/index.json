@@ -47,10 +47,10 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BunterVogel_Adventskalender-Banner_5.12.23-14.58h.jpg",
-        "image_2": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-14.55h.jpg",
+        "image": "shopify:\/\/shop_images\/BunterVogel_Adventskalender-Banner_5.12.23-15h.jpg",
+        "image_2": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-15h.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
