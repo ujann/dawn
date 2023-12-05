@@ -61,6 +61,22 @@
     },
     "d1b3bcbc-5712-48a2-8044-92cf23dd3f02": {
       "type": "image-banner",
+      "blocks": {
+        "d72c33e4-4ff2-4d24-88ee-614c972da368": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "shopify:\/\/products\/spieltz-o-tannenbaum",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "d72c33e4-4ff2-4d24-88ee-614c972da368"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-16.30h.jpg",
         "image_overlay_opacity": 0,
