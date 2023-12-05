@@ -50,6 +50,15 @@
         "show_text_below": false
       }
     },
+    "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "inverse",
+        "padding_top": 4,
+        "padding_bottom": 8
+      }
+    },
     "f52aea5c-8a15-4abb-8597-0ac6d4134488": {
       "type": "image-banner",
       "blocks": {
@@ -98,47 +107,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "inverse",
-        "padding_top": 4,
-        "padding_bottom": 8
-      }
-    },
-    "d1b3bcbc-5712-48a2-8044-92cf23dd3f02": {
-      "type": "image-banner",
-      "blocks": {
-        "d72c33e4-4ff2-4d24-88ee-614c972da368": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "d72c33e4-4ff2-4d24-88ee-614c972da368"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-16.30h.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "rich_text": {
@@ -311,9 +279,8 @@
   },
   "order": [
     "image_banner",
-    "f52aea5c-8a15-4abb-8597-0ac6d4134488",
     "f23544c2-ac09-4957-8113-9eefb2ea9ccf",
-    "d1b3bcbc-5712-48a2-8044-92cf23dd3f02",
+    "f52aea5c-8a15-4abb-8597-0ac6d4134488",
     "rich_text",
     "featured_collection",
     "collage",
