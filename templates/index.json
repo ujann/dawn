@@ -38,9 +38,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BunterVogel-Website_Banner-3.jpg",
+        "image": "shopify:\/\/shop_images\/BunterVogel_Adventskalender-Banner_5.12.23-2.30h.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
