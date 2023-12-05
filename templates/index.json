@@ -1,5 +1,14 @@
 {
   "sections": {
+    "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -50,15 +59,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 8,
-        "padding_bottom": 8
       }
     },
     "d1b3bcbc-5712-48a2-8044-92cf23dd3f02": {
@@ -247,8 +247,8 @@
     }
   },
   "order": [
-    "image_banner",
     "f23544c2-ac09-4957-8113-9eefb2ea9ccf",
+    "image_banner",
     "d1b3bcbc-5712-48a2-8044-92cf23dd3f02",
     "rich_text",
     "featured_collection",
