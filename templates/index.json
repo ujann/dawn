@@ -50,6 +50,56 @@
         "show_text_below": false
       }
     },
+    "f52aea5c-8a15-4abb-8597-0ac6d4134488": {
+      "type": "image-banner",
+      "blocks": {
+        "73751aa3-2878-46af-ac0f-f9fe5bb3d6c1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h0"
+          }
+        },
+        "0d89d083-554f-4d40-ae9a-5e65a3002ef6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "e1d15a35-6f59-499b-b01b-a5508e49fba1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "shopify:\/\/products\/spieltz-o-tannenbaum",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "73751aa3-2878-46af-ac0f-f9fe5bb3d6c1",
+        "0d89d083-554f-4d40-ae9a-5e65a3002ef6",
+        "e1d15a35-6f59-499b-b01b-a5508e49fba1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-16.30h.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
       "type": "custom-liquid",
       "settings": {
@@ -66,7 +116,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "",
-            "button_link_1": "shopify:\/\/products\/spieltz-o-tannenbaum",
+            "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -261,6 +311,7 @@
   },
   "order": [
     "image_banner",
+    "f52aea5c-8a15-4abb-8597-0ac6d4134488",
     "f23544c2-ac09-4957-8113-9eefb2ea9ccf",
     "d1b3bcbc-5712-48a2-8044-92cf23dd3f02",
     "rich_text",
