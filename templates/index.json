@@ -1,14 +1,5 @@
 {
   "sections": {
-    "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "inverse",
-        "padding_top": 4,
-        "padding_bottom": 8
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -47,10 +38,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BunterVogel_Adventskalender-Banner_5.12.23-15.10h.jpg",
-        "image_2": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-15.10h.jpg",
+        "image": "shopify:\/\/shop_images\/BunterVogel_Adventskalender-Banner_5.12.23-2.30h.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -61,9 +51,17 @@
         "show_text_below": false
       }
     },
+    "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "inverse",
+        "padding_top": 4,
+        "padding_bottom": 8
+      }
+    },
     "d1b3bcbc-5712-48a2-8044-92cf23dd3f02": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-3.20h_85d827a8-ccbc-462b-b49a-eab71fd15d41.jpg",
         "image_overlay_opacity": 0,
@@ -247,8 +245,8 @@
     }
   },
   "order": [
-    "f23544c2-ac09-4957-8113-9eefb2ea9ccf",
     "image_banner",
+    "f23544c2-ac09-4957-8113-9eefb2ea9ccf",
     "d1b3bcbc-5712-48a2-8044-92cf23dd3f02",
     "rich_text",
     "featured_collection",
