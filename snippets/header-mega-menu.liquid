@@ -8,9 +8,10 @@
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
-      <li>
-        {% assign parent_first_char = link.title | slice: 0 %}
-        {%- if link.links != blank and parent_first_char != 'x' -%}
+      {% assign parent_first_char = link.title | slice: 0 %}
+      {% if parent_first_char  != 'x'  %}
+        <li>
+        {%- if link.links != blank -%}
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
               <summary
@@ -63,7 +64,7 @@
                                                         aria-current="page"
                                                     {% endif %}
                                             >
-                                                {{ grandchildlink.title | escape }} -> {{ first_grandchild_char }}
+                                                {{ grandchildlink.title | escape }}
                                             </a>
                                         </li>
                                       {%- endif -%}
@@ -96,6 +97,7 @@
           </a>
           {%- endif -%}
       </li>
+      {% endif %}
     {%- endfor -%}
   </ul>
 </nav>
