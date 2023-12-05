@@ -4,9 +4,9 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "",
-        "color_scheme": "",
+        "color_scheme": "inverse",
         "padding_top": 4,
-        "padding_bottom": 4
+        "padding_bottom": 8
       }
     },
     "image_banner": {
