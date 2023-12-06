@@ -132,7 +132,7 @@
               {{ block.shopify_attributes }}
             >
                         
-<a class="ezfy-clickable-banner" href="{{ block.settings.button_link_1 }}"></a>
+<a class="ezfy-{{ section.id }}" href="{{ block.settings.button_link_1 }}"></a>
 <style>
 [id*='{{ section.id }}'].banner{
 position: relative;
@@ -146,7 +146,7 @@ position: relative;
     const $el = document.querySelector(`[id*='{{ section.id }}']`)
 
     $el.addEventListener("click", function(){
-      const $button = document.querySelector(`.ezfy-clickable-banner`);
+      const $button = document.querySelector(`.ezfy-{{ section.id }}`);
 
       $button.click();
     })
