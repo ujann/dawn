@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1701987093,
+  "tsPublished": 1701987355,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -509,32 +509,6 @@
         }
       },
       {
-        "name": "wpm-domain-test",
-        "domain": "buntervogel-geschenke.de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "Session",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
-        }
-      },
-      {
-        "name": "wpm-domain-test",
-        "domain": "de",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": false,
-        "retention": "Session",
-        "expires": 1,
-        "unit": "declSession",
-        "purpose": {
-          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
-        }
-      },
-      {
         "name": "local-storage-test",
         "domain": "https:\/\/buntervogel-geschenke.de",
         "path": "\/",
@@ -683,6 +657,73 @@
         }
       },
       {
+        "name": "_boomr_clss",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Anonymisierte Daten, um die Effizienz der Website bezüglich load times, errors, User Interaktionen und Seiten Navigationen zu analysieren."
+        }
+      },
+      {
+        "name": "_ga",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Cookie wird von Google Analytics mit unbekannter Funktionalität gesetzt"
+        }
+      },
+      {
+        "name": "_ga_8H70FC760D",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "_ga_SV37NRGRY0",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": ""
+        }
+      }
+    ],
+    "4": [
+      {
+        "name": "_fbp",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "90 day(s)",
+        "expires": 90,
+        "unit": "declSession",
+        "purpose": {
+          "de": "Cookie is placed by Facebook to track visits across websites."
+        }
+      },
+      {
         "name": "lastExternalReferrer",
         "domain": "https:\/\/buntervogel-geschenke.de",
         "path": "\/",
@@ -709,31 +750,68 @@
         }
       },
       {
-        "name": "_boomr_clss",
-        "domain": "https:\/\/buntervogel-geschenke.de",
+        "name": "wpm-domain-test",
+        "domain": "buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
-        "retention": "Persistent",
+        "retention": "Session",
         "expires": 1,
         "unit": "declSession",
         "purpose": {
-          "de": "Anonymisierte Daten, um die Effizienz der Website bezüglich load times, errors, User Interaktionen und Seiten Navigationen zu analysieren."
+          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
         }
-      }
-    ],
-    "4": [
+      },
       {
-        "name": "_fbp",
-        "domain": ".buntervogel-geschenke.de",
+        "name": "wpm-domain-test",
+        "domain": "de",
         "path": "\/",
-        "provider": "Facebook",
-        "firstParty": true,
-        "retention": "90 day(s)",
-        "expires": 90,
+        "provider": "Shopify",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
         "unit": "declSession",
         "purpose": {
-          "de": "Cookie is placed by Facebook to track visits across websites."
+          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
+        }
+      },
+      {
+        "name": "_gcl_au",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "3 month(s)",
+        "expires": 3,
+        "unit": "declMonths",
+        "purpose": {
+          "de": "Cookie wird von Google Tag Manager platziert, um Conversions zu verfolgen."
+        }
+      },
+      {
+        "name": "IDE",
+        "domain": ".doubleclick.net",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Um die Aktionen der Besucher zu messen, nachdem sie sich durch eine Anzeige geklickt haben. Verfällt nach 1 Jahr."
+        }
+      },
+      {
+        "name": "test_cookie",
+        "domain": ".doubleclick.net",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": false,
+        "retention": "15 minute(s)",
+        "expires": 15,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Um die Aktionen der Besucher zu messen, nachdem sie sich durch eine Anzeige geklickt haben. Verfällt nach jedem Besuch."
         }
       }
     ],
