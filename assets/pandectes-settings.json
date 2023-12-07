@@ -5,7 +5,7 @@
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1701556383,
+  "tsPublished": 1701987093,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -745,8 +745,8 @@
     "isActive": false,
     "googleConsentMode": {
       "id": "",
-      "analyticsId": "",
-      "isActive": false,
+      "analyticsId": "G-SV37NRGRY0",
+      "isActive": true,
       "adStorageCategory": 4,
       "analyticsStorageCategory": 2,
       "personalizationStorageCategory": 1,
