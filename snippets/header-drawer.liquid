@@ -47,7 +47,7 @@
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
-                              {% assign child_first_char = link.title | slice: 0 %}
+                              {% assign child_first_char = childlink.title | slice: 0 %}
                               {% if child_first_char  != 'x'  %}
                               <li>
                                 {%- if childlink.links == blank or true -%}
