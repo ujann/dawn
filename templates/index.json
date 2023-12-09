@@ -97,7 +97,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-16.30h.jpg",
-        "image_2": "shopify:\/\/shop_images\/Bunter-Vogel_Adventskalender_6.12.23_3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -123,7 +122,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Beschenke deine Lieben oder dich selbst! Alles, was du in unserem kleinen, feinen Laden findest, ist von uns persönlich getestet. Wir lieben coole, hübsche, lustige, inspirierende und praktische Dinge. Auf gute Qualität, nachhaltige Produktion und faire Arbeitsbedingungen legen wir großen Wert. Wir haben Schönes von bekannten Marken und Außergewöhnliches von kleinen Labels im Sortiment, das wir gerade mit viel Herzblut aufbauen. Du kennst tolle Produkte, die wir aufnehmen sollen? Schreib uns an!<\/p><p><\/p>"
+            "text": "<p>Beschenke deine Lieben oder dich selbst! Liebst du coole, hübsche, lustige, inspirierende und praktische Dinge? Und legst außerdem Wert auf auf gute Qualität, nachhaltige Produktion und faire Arbeitsbedingungen? Dann bist du hier richtig, und es geht dir wie uns!  Wir haben Schönes von bekannten Marken und Außergewöhnliches von kleinen Labels im Sortiment, das wir gerade mit viel Herzblut aufbauen. Du kennst tolle Produkte, die wir aufnehmen sollen? Schreib uns an!<\/p><p><\/p>"
           }
         }
       },
