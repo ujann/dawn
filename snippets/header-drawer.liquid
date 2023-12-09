@@ -22,6 +22,8 @@
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
+                {% assign parent_first_char = link.title | slice: 0 %}
+                {% if parent_first_char  != 'x'  %}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
@@ -45,8 +47,10 @@
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
+                              {% assign child_first_char = link.title | slice: 0 %}
+                              {% if child_first_char  != 'x'  %}
                               <li>
-                                {%- if childlink.links == blank -%}
+                                {%- if childlink.links == blank or true -%}
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
                                     href="{{ childlink.url }}"
@@ -102,6 +106,7 @@
                                   </details>
                                 {%- endif -%}
                               </li>
+                              {% endif %}
                             {%- endfor -%}
                           </ul>
                         </div>
@@ -120,6 +125,7 @@
                     </a>
                   {%- endif -%}
                 </li>
+                {% endif %}
               {%- endfor -%}
             </ul>
           </nav>
