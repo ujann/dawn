@@ -323,7 +323,7 @@
 }
 
 .banner__box {
-  padding: 4rem 3.5rem;
+  padding: 0rem 0rem; /*ursprünglich:  4rem 3.5rem; */
   position: relative;
   height: fit-content;
   align-items: center;
