@@ -3333,6 +3333,6 @@ details-disclosure > details {
 
 @media screen and (max-width: 950px){
   .banner--medium:not(.banner--adapt) {
-    min-height: 1rem;
+    min-height: 15rem;
   }
 }
