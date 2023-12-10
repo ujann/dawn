@@ -3323,3 +3323,16 @@ details-disclosure > details {
     --sparkle: url('./sparkle.gif');
   }
 }
+
+.media {
+  background-color: transparent;
+}
+.media > img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 950px){
+  .banner--medium:not(.banner--adapt) {
+    min-height: 44rem;
+  }
+}
