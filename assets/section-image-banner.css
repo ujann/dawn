@@ -466,6 +466,8 @@
   }
 }
 
+/* --> Mobile Image Banner:
+
 .banner__media:first-child {
     width: 100%;
 }
@@ -485,4 +487,4 @@
     .banner__content::before{
         padding-bottom: 150% !important;
     }
-}
+} */
