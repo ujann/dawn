@@ -52,7 +52,6 @@
     },
     "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "",
         "color_scheme": "inverse",
