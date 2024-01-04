@@ -37,7 +37,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BunterVogel_Adventskalender-Banner_6.12.23-1h.jpg",
+        "image": "shopify:\/\/shop_images\/BunterVogel-Banner_Buntes-im-Januar_4.1.24-3h.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -52,6 +52,7 @@
     },
     "f23544c2-ac09-4957-8113-9eefb2ea9ccf": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "",
         "color_scheme": "inverse",
@@ -95,6 +96,7 @@
         "0d89d083-554f-4d40-ae9a-5e65a3002ef6",
         "e1d15a35-6f59-499b-b01b-a5508e49fba1"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/BunterVogel-Banner_Empfehlung_5.12.23-16.30h.jpg",
         "image_overlay_opacity": 0,
