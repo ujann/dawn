@@ -38,9 +38,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BunterVogel-Website_Banner-3.jpg",
+        "image": "shopify:\/\/shop_images\/BastelWas_Banner_16.11.23-21h_1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -57,14 +57,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Buntes zum Spielen, Basteln, Wohnen und Schenken!",
+            "heading": "Bastel was Schönes!",
             "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Beschenke deine Lieben oder dich selbst! Alles, was du in unserem kleinen, feinen Laden findest, ist von uns persönlich getestet. Wir lieben coole, hübsche, lustige, inspirierende und praktische Dinge. Auf gute Qualität, nachhaltige Produktion und faire Arbeitsbedingungen legen wir großen Wert. Wir haben Schönes von bekannten Marken und Außergewöhnliches von kleinen Labels im Sortiment, das wir gerade mit viel Herzblut aufbauen. Du kennst tolle Produkte, die wir aufnehmen sollen? Schreib uns an!<\/p><p><\/p>"
+            "text": "<p>Basteln ist toll. Du kannst alleine oder zusammen mit anderen schöne Dinge gestalten, dich ausprobieren oder einfach eine gute Zeit haben. <\/p><p>Du liebst es, Neues zu erschaffen oder Altes aufzupeppen, interessante Techniken zu erproben und besondere Materialien zu verarbeiten? Du legst außerdem Wert auf gute Qualität, nachhaltige Produktion und faire Arbeitsbedingungen? Dann bist du hier richtig! <br\/><br\/>bastel was ist ein kleiner, feiner Online-Laden. Eine handverlesene Sammlung von Qualitäts-Bastelmaterialien. Jedes Produkt wird von uns sorgfältig ausgewählt und getestet. <br\/><br\/>Du kennst weitere tolle Produkte, die wir aufnehmen sollen? Schreib uns an! info@bastel-was-schoenes.de<\/p><p><\/p>"
           }
         }
       },
