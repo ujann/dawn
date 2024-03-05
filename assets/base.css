@@ -118,8 +118,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section slideshow-compo
   }
 
   .header.page-width {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
+    padding-left: 35rem;
+    padding-right: 35rem;
   }
 
   .page-width--narrow {
@@ -3321,5 +3321,18 @@ details-disclosure > details {
   :root {
     --easter-egg: none;
     --sparkle: url('./sparkle.gif');
+  }
+}
+
+.media {
+  background-color: transparent;
+}
+.media > img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 950px){
+  .banner--medium:not(.banner--adapt) {
+    min-height: 44rem;
   }
 }

@@ -89,7 +89,7 @@
         "description": "",
         "show_description": true,
         "description_style": "body",
-        "collection": "all",
+        "collection": "alles",
         "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": false,
