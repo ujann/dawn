@@ -1,15 +1,15 @@
 {
   "store": {
-    "id": 64384172290,
+    "id": 64492830955,
     "plan": "plus",
     "theme": "dawn\/10.0.0-buntervogel",
     "primaryLocale": "de",
     "adminMode": false
   },
-  "tsPublished": 1709594502,
+  "tsPublished": 1710265276,
   "declaration": {
-    "showPurpose": true,
-    "showProvider": true,
+    "showPurpose": false,
+    "showProvider": false,
     "declIntroText": "Wir verwenden Cookies, um die Funktionalität der Website zu optimieren, die Leistung zu analysieren und Ihnen ein personalisiertes Erlebnis zu bieten. Einige Cookies sind für den ordnungsgemäßen Betrieb der Website unerlässlich. Diese Cookies können nicht deaktiviert werden. In diesem Fenster können Sie Ihre Präferenzen für Cookies verwalten.",
     "showDateGenerated": true
   },
@@ -24,10 +24,10 @@
   "texts": {
     "managed": {
       "headerText": {
-        "de": "Wir respektieren deine Privatsphäre"
+        "de": "Cookie\/Pixel-Banner"
       },
       "consentText": {
-        "de": "Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten."
+        "de": "Wir verwenden auf dieser Website Cookies und Pixel um Inhalte und Anzeigen zu personalisieren, Funktionen sozialer Medien anzubieten und Zugriffe auf unsere Website zu analysieren. Die Art Ihrer Verwendung unserer Website wird an unsere Partner für Werbung, soziale Medien und Analysen weitergegeben. Weitere Information, welche Cookies\/Pixel verwendet werden, finden Sie in unserer Datenschutzerklärung.\nMit der Nutzung unseres Shopify-Systems stimmen Sie gem. Art. 49 I S. 1 a DSGVO auch zu, dass Ihre Daten in den USA verarbeitet werden. Die USA werden vom Europäischen Gerichtshof als ein Land mit einem nach EU-Standards unzureichenden Datenschutzniveau eingeschätzt. Es besteht das Risiko, dass Ihre Daten durch US-Behörden, zu Kontroll- und zu Überwachungszwecken, möglicherweise auch ohne Rechtsbehelfsmöglichkeiten, verarbeitet werden können. Weitere Informationen können Sie unserer Datenschutzerklärung entnehmen."
       },
       "dismissButtonText": {
         "de": "Okay"
@@ -287,54 +287,54 @@
     "dismissOnTimeout": false,
     "palette": {
       "popup": {
-        "background": "#FFFFFF",
+        "background": "#252E39",
         "backgroundForCalculations": {
           "a": 1,
-          "b": 255,
-          "g": 255,
-          "r": 255
+          "b": 57,
+          "g": 46,
+          "r": 37
         },
-        "text": "#000000"
+        "text": "#FFFFFF"
       },
       "button": {
-        "background": "transparent",
+        "background": "#14A7D0",
         "backgroundForCalculations": {
+          "a": 1,
+          "b": 208,
+          "g": 167,
+          "r": 20
+        },
+        "text": "#FFFFFF",
+        "textForCalculation": {
           "a": 1,
           "b": 255,
           "g": 255,
           "r": 255
         },
-        "text": "#000000",
-        "textForCalculation": {
-          "a": 1,
-          "b": 0,
-          "g": 0,
-          "r": 0
-        },
-        "border": "#000000"
+        "border": "transparent"
       }
     },
     "content": {
-      "href": "https:\/\/bastel-was.myshopify.com\/policies\/privacy-policy",
-      "imprintHref": "https:\/\/bastel-was.myshopify.com\/pages\/gdpr-compliance",
+      "href": "https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy",
+      "imprintHref": "https:\/\/buntervogel-geschenke.de\/policies\/legal-notice",
       "close": "&#10005;",
       "target": "",
-      "logo": "<img class=\"cc-banner-logo\" height=\"40\" width=\"40\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/8417\/2290\/t\/4\/assets\/pandectes-logo.png?v=1688750996\" alt=\"Bastel was\" \/>"
+      "logo": ""
     },
     "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-bottom-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
     "compliance": {
-      "custom": "<div class=\"cc-compliance cc-highlight\">{{preferences}}{{allow}}{{deny}}<\/div>"
+      "custom": "<div class=\"cc-compliance cc-highlight\">{{preferences}}{{deny}}{{allow}}<\/div>"
     },
     "type": "custom",
     "layouts": {
-      "basic": "{{logo}}{{messagelink}}{{compliance}}{{close}}"
+      "basic": "{{messagelink}}{{compliance}}"
     },
     "position": "bottom",
-    "theme": "wired",
+    "theme": "block",
     "revokable": true,
     "animateRevokable": false,
     "revokableReset": false,
-    "revokableLogoUrl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/8417\/2290\/t\/4\/assets\/pandectes-reopen-logo.png?v=1688750992",
+    "revokableLogoUrl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0644\/9283\/0955\/t\/7\/assets\/pandectes-reopen-logo.png?v=1688750605",
     "revokablePlacement": "bottom-left",
     "revokableMarginHorizontal": 15,
     "revokableMarginVertical": 15,
@@ -360,8 +360,8 @@
     "accessSectionDownloadReportAuto": false
   },
   "banner": {
-    "resetTs": 1695081716,
-    "extraCss": "        .cc-banner-logo {max-width: 32em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 32em!important;width: 32em!important;}}    .cc-message, .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    button.pd-cp-btn, a.pd-cp-btn{}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 \/ 20%);}  ",
+    "resetTs": 1695084120,
+    "extraCss": "        .cc-banner-logo {max-width: 24em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 24em!important;width: 24em!important;}}    .cc-message, .pd-cookie-banner-window .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-size: 16px!important;font-family: inherit;}    .pd-cookie-banner-window .cc-header{font-size: 16px!important;font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #252E39;color:#FFFFFF;}    button.pd-cp-btn, a.pd-cp-btn{background-color:#14A7D0;color:#FFFFFF!important;}    input + .pd-cp-preferences-slider{background-color: rgba(255, 255, 255, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(255, 255, 255, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(255, 255, 255, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(255, 255, 255, 1)}    .pd-cp-ui-close{color:#FFFFFF;}    .pd-cp-preferences-slider:before{background-color: #252E39}    .pd-cp-title:before {border-color: #FFFFFF!important}    .pd-cp-preferences-slider{background-color:#FFFFFF}    .pd-cp-toggle{color:#FFFFFF!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #FFFFFF}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#FFFFFF!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 \/ 20%);}  @media only screen and (max-width: 600px) {  .cc-window { padding: 2px!important; }  .cc-btn { font-size: 0.8em; }  .cc-message {    font-size: 10px!important;    line-height: 10px;  }}",
     "customJavascript": null,
     "showPoweredBy": false,
     "hybridStrict": false,
@@ -380,8 +380,8 @@
   "cookies": {
     "0": [
       {
-        "name": "localization",
-        "domain": "bastel-was.myshopify.com",
+        "name": "secure_customer_sig",
+        "domain": "buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
@@ -389,12 +389,12 @@
         "expires": 1,
         "unit": "declYears",
         "purpose": {
-          "de": "Lokalisierung von Shopify-Shops"
+          "de": "Used in connection with customer login."
         }
       },
       {
         "name": "cart_currency",
-        "domain": "bastel-was.myshopify.com",
+        "domain": "buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
@@ -402,38 +402,12 @@
         "expires": 14,
         "unit": "declDays",
         "purpose": {
-          "de": "Das Cookie ist für die sichere Checkout- und Zahlungsfunktion auf der Website erforderlich. Diese Funktion wird von shopify.com bereitgestellt."
+          "de": "Used in connection with shopping cart."
         }
       },
       {
-        "name": "_cmp_a",
-        "domain": ".bastel-was.myshopify.com",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "24 hour(s)",
-        "expires": 24,
-        "unit": "declHours",
-        "purpose": {
-          "de": "Wird zum Verwalten der Datenschutzeinstellungen des Kunden verwendet."
-        }
-      },
-      {
-        "name": "keep_alive",
-        "domain": "bastel-was.myshopify.com",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
-        "purpose": {
-          "de": "Wird im Zusammenhang mit der Käuferlokalisierung verwendet."
-        }
-      },
-      {
-        "name": "secure_customer_sig",
-        "domain": "bastel-was.myshopify.com",
+        "name": "localization",
+        "domain": "buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
@@ -441,7 +415,111 @@
         "expires": 1,
         "unit": "declYears",
         "purpose": {
-          "de": "Wird im Zusammenhang mit dem Kundenlogin verwendet."
+          "de": "Shopify store localization"
+        }
+      },
+      {
+        "name": "_cmp_a",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "24 hour(s)",
+        "expires": 24,
+        "unit": "declHours",
+        "purpose": {
+          "de": "Used for managing customer privacy settings."
+        }
+      },
+      {
+        "name": "_tracking_consent",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Tracking preferences."
+        }
+      },
+      {
+        "name": "_secure_session_id",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "24 hour(s)",
+        "expires": 24,
+        "unit": "declHours",
+        "purpose": {
+          "de": "Used in connection with navigation through a storefront."
+        }
+      },
+      {
+        "name": "keep_alive",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Used in connection with buyer localization."
+        }
+      },
+      {
+        "name": "_pandectes_gdpr",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Pandectes",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Wird für die Funktionalität des Cookies-Zustimmungsbanners verwendet."
+        }
+      },
+      {
+        "name": "cart_sig",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Shopify-Analysen."
+        }
+      },
+      {
+        "name": "cookietest",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Used to ensure our systems are working correctly."
+        }
+      },
+      {
+        "name": "local-storage-test",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Dieser Eintrag im Localstorage wird vom Shopify Store benutzt um zu testen, ob Localstorage funktioniert."
         }
       }
     ],
@@ -450,21 +528,21 @@
     ],
     "2": [
       {
-        "name": "_s",
-        "domain": ".bastel-was.myshopify.com",
+        "name": "_y",
+        "domain": ".buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
         "purpose": {
-          "de": "Shopify-Analysen."
+          "de": "Shopify analytics."
         }
       },
       {
         "name": "_shopify_y",
-        "domain": ".bastel-was.myshopify.com",
+        "domain": ".buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
@@ -472,25 +550,12 @@
         "expires": 1,
         "unit": "declYears",
         "purpose": {
-          "de": "Shopify-Analysen."
+          "de": "Shopify analytics."
         }
       },
       {
-        "name": "_orig_referrer",
-        "domain": ".bastel-was.myshopify.com",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "14 day(s)",
-        "expires": 14,
-        "unit": "declDays",
-        "purpose": {
-          "de": "Verfolgt Zielseiten."
-        }
-      },
-      {
-        "name": "_shopify_sa_p",
-        "domain": ".bastel-was.myshopify.com",
+        "name": "_s",
+        "domain": ".buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
@@ -498,25 +563,12 @@
         "expires": 30,
         "unit": "declMinutes",
         "purpose": {
-          "de": "Shopify-Analysen in Bezug auf Marketing und Empfehlungen."
-        }
-      },
-      {
-        "name": "_y",
-        "domain": ".bastel-was.myshopify.com",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "1 year(s)",
-        "expires": 1,
-        "unit": "declYears",
-        "purpose": {
-          "de": "Shopify-Analysen."
+          "de": "Shopify analytics."
         }
       },
       {
         "name": "_shopify_sa_t",
-        "domain": ".bastel-was.myshopify.com",
+        "domain": ".buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
@@ -524,25 +576,12 @@
         "expires": 30,
         "unit": "declMinutes",
         "purpose": {
-          "de": "Shopify-Analysen in Bezug auf Marketing und Empfehlungen."
+          "de": "Shopify analytics relating to marketing & referrals."
         }
       },
       {
-        "name": "_shopify_s",
-        "domain": ".bastel-was.myshopify.com",
-        "path": "\/",
-        "provider": "Shopify",
-        "firstParty": true,
-        "retention": "30 minute(s)",
-        "expires": 30,
-        "unit": "declMinutes",
-        "purpose": {
-          "de": "Shopify-Analysen."
-        }
-      },
-      {
-        "name": "_landing_page",
-        "domain": ".bastel-was.myshopify.com",
+        "name": "_orig_referrer",
+        "domain": ".buntervogel-geschenke.de",
         "path": "\/",
         "provider": "Shopify",
         "firstParty": true,
@@ -550,12 +589,232 @@
         "expires": 14,
         "unit": "declDays",
         "purpose": {
-          "de": "Verfolgt Zielseiten."
+          "de": "Tracks landing pages."
+        }
+      },
+      {
+        "name": "_shopify_sa_p",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Shopify analytics relating to marketing & referrals."
+        }
+      },
+      {
+        "name": "_shopify_s",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_landing_page",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "14 day(s)",
+        "expires": 14,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Tracks landing pages."
+        }
+      },
+      {
+        "name": "_shopify_d",
+        "domain": "de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Shopify-Analysen."
+        }
+      },
+      {
+        "name": "_shopify_d",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Shopify-Analysen."
+        }
+      },
+      {
+        "name": "_boomr_clss",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Anonymisierte Daten, um die Effizienz der Website bezüglich load times, errors, User Interaktionen und Seiten Navigationen zu analysieren."
+        }
+      },
+      {
+        "name": "_ga",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Cookie wird von Google Analytics mit unbekannter Funktionalität gesetzt"
+        }
+      },
+      {
+        "name": "_ga_8H70FC760D",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": ""
+        }
+      },
+      {
+        "name": "_ga_SV37NRGRY0",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": ""
         }
       }
     ],
     "4": [
-
+      {
+        "name": "_fbp",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "90 day(s)",
+        "expires": 90,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Cookie is placed by Facebook to track visits across websites."
+        }
+      },
+      {
+        "name": "lastExternalReferrer",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Ermittelt, wie der Nutzer die Website erreicht hat, indem seine letzte URL-Adresse registriert wird."
+        }
+      },
+      {
+        "name": "lastExternalReferrerTime",
+        "domain": "https:\/\/buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Ermittelt, wann der Nutzer die Website erreicht hat."
+        }
+      },
+      {
+        "name": "wpm-domain-test",
+        "domain": "buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
+        }
+      },
+      {
+        "name": "wpm-domain-test",
+        "domain": "de",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "de": "Dieses Cookie wird vom Shopify Store benutzt um das Schreiben von weiteren Cookies zu testen."
+        }
+      },
+      {
+        "name": "_gcl_au",
+        "domain": ".buntervogel-geschenke.de",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "3 month(s)",
+        "expires": 3,
+        "unit": "declMonths",
+        "purpose": {
+          "de": "Cookie wird von Google Tag Manager platziert, um Conversions zu verfolgen."
+        }
+      },
+      {
+        "name": "IDE",
+        "domain": ".doubleclick.net",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "de": "Um die Aktionen der Besucher zu messen, nachdem sie sich durch eine Anzeige geklickt haben. Verfällt nach 1 Jahr."
+        }
+      },
+      {
+        "name": "test_cookie",
+        "domain": ".doubleclick.net",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": false,
+        "retention": "15 minute(s)",
+        "expires": 15,
+        "unit": "declMinutes",
+        "purpose": {
+          "de": "Um die Aktionen der Besucher zu messen, nachdem sie sich durch eine Anzeige geklickt haben. Verfällt nach jedem Besuch."
+        }
+      }
     ],
     "8": [
 
@@ -565,8 +824,8 @@
     "isActive": false,
     "googleConsentMode": {
       "id": "",
-      "analyticsId": "",
-      "isActive": false,
+      "analyticsId": "G-SV37NRGRY0",
+      "isActive": true,
       "adStorageCategory": 4,
       "analyticsStorageCategory": 2,
       "personalizationStorageCategory": 1,
