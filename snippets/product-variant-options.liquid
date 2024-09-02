@@ -72,6 +72,7 @@
         {% for variant in product.variants %}
           {% assign variant_option_value = variant[option_number] %}
           {% if variant_option_value == value and variant_found == 0 %}
+            <!-- variant.image: {{ variant.image.id }} {{ variant.image | json }} -->
             <img name="{{ value }}" src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}" style="object-fit: scale-down; min-width: 50px; max-height: 50px;"/>
             <div class="variant-pill-image_text">{{ value }}</div>
             {% assign variant_found = 1 %}
