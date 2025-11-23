@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -24,7 +33,7 @@
           "disabled": true,
           "settings": {
             "button_label_1": "Produkte",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -38,7 +47,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Spieltz-Store_Banner_07.12.23-14.45h.jpg",
+        "image": "shopify://shop_images/Spieltz-Store_Banner_07.12.23-14.45h.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -64,7 +73,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Du bist auf der Suche nach lustigen und einfachen Familienspielen? Oder du hast dein eigenes Spiel entwickelt und brauchst Blanko-Spielmaterial, mit dem du es gestalten kannst? Du suchst Spielfiguren, Spielsteine oder Würfel für dein eigenes Spiel oder als Ersatzteile für dein Lieblings-Brettspiel? Dann bist du hier richtig - herzlich willkommen!<br\/><br\/>In unserem Verlagsprogramm findest einfach zu lernende Familienspiele, die Spaß machen. Kreative lieben unsere Spielfiguren, Würfel und anderes Spiele-Zubehör in vielen verschiedenen Formen und Farben und unser Blanko-Spielmaterial zur Gestaltung eigener Spiele. Stöbere dich durch! Fehlt dir was? Dann schreib uns eine Mail! <a href=\"mailto:info@spieltz.de\" title=\"mailto:info@spieltz.de\">info@spieltz.de<\/a><\/p><p><\/p>"
+            "text": "<p>Du bist auf der Suche nach lustigen und einfachen Familienspielen? Oder du hast dein eigenes Spiel entwickelt und brauchst Blanko-Spielmaterial, mit dem du es gestalten kannst? Du suchst Spielfiguren, Spielsteine oder Würfel für dein eigenes Spiel oder als Ersatzteile für dein Lieblings-Brettspiel? Dann bist du hier richtig - herzlich willkommen!<br/><br/>In unserem Verlagsprogramm findest einfach zu lernende Familienspiele, die Spaß machen. Kreative lieben unsere Spielfiguren, Würfel und anderes Spiele-Zubehör in vielen verschiedenen Formen und Farben und unser Blanko-Spielmaterial zur Gestaltung eigener Spiele. Stöbere dich durch! Fehlt dir was? Dann schreib uns eine Mail! <a href=\"mailto:info@spieltz.de\" title=\"mailto:info@spieltz.de\">info@spieltz.de</a></p><p></p>"
           }
         }
       },
@@ -89,7 +98,7 @@
         "description": "",
         "show_description": true,
         "description_style": "body",
-        "collection": "all",
+        "collection": "auf-lager",
         "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": false,
@@ -156,7 +165,7 @@
         "heading": "NEU: Spieltz Party Ludo - der Spiele-Klassiker in der Party-Version",
         "heading_size": "h2",
         "enable_video_looping": false,
-        "video_url": "https:\/\/youtu.be\/2mLdD-2Tbxg",
+        "video_url": "https://youtu.be/2mLdD-2Tbxg",
         "description": "Spieltz Party Ludo für 8-10 Personen",
         "full_width": false,
         "color_scheme": "background-1",
@@ -171,7 +180,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -180,7 +189,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -189,7 +198,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
