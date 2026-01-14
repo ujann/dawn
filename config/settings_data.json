@@ -1,6 +1,15 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Element_19.png",
+    "logo": "shopify://shop_images/Element_19.png",
     "logo_width": 130,
     "type_header_font": "avenir_next_n4",
     "heading_scale": 100,
@@ -96,7 +105,7 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "social_facebook_link": "https:\/\/www.facebook.com\/Bunter-Vogel-106942327866223\/",
+    "social_facebook_link": "https://www.facebook.com/Bunter-Vogel-106942327866223/",
     "social_instagram_link": "",
     "social_youtube_link": "",
     "social_tiktok_link": "",
@@ -128,9 +137,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -185,6 +192,15 @@
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
+        }
+      }
+    },
+    "blocks": {
+      "13180643132867056963": {
+        "type": "shopify://apps/gdpr-legal-cookie/blocks/bc-block/e49729f0-d37d-4e24-ac65-e0e2f472ac27",
+        "disabled": false,
+        "settings": {
+          "hide_label": false
         }
       }
     }
