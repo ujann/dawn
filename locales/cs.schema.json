@@ -982,9 +982,6 @@
         "image_2": {
           "label": "Druhý obrázek"
         },
-        "color_scheme": {
-          "info": "Zobrazuje se v případě, že se zobrazuje kontejner."
-        },
         "stack_images_on_mobile": {
           "label": "Zobrazit obrázky na mobilním zařízení nad sebou"
         },
@@ -2657,6 +2654,9 @@
         },
         "header": {
           "content": "Mobilní rozvržení"
+        },
+        "color_scheme": {
+          "info": "Zobrazuje se v případě, že se zobrazuje kontejner."
         }
       },
       "blocks": {

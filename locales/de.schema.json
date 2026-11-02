@@ -982,9 +982,6 @@
         "image_2": {
           "label": "Zweites Bild"
         },
-        "color_scheme": {
-          "info": "Sichtbar, wenn Container angezeigt wird."
-        },
         "stack_images_on_mobile": {
           "label": "Gestapelte Bilder auf Mobilgeräten"
         },
@@ -2657,6 +2654,9 @@
             "label": "Rechts"
           },
           "label": "Mobile Inhaltsausrichtung"
+        },
+        "color_scheme": {
+          "info": "Sichtbar, wenn Container angezeigt wird."
         }
       },
       "blocks": {

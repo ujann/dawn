@@ -1,0 +1,76 @@
+{% doc %}
+  Displays the unchanged German EU legal guarantee notice and its text equivalent.
+  @param {string} notice_title - Translated heading
+  @param {string} image_alt - Translated image alternative
+  @param {string} full_size_label - Translated original image link
+  @param {string} eu_link_label - Translated EU portal link
+  @param {string} text_title - Translated text version heading
+  @example
+  {% render 'spieltz-warranty-notice' %}
+{% enddoc %}
+
+<details class="spieltz-warranty page-width">
+  <summary>{{ notice_title | escape }}</summary>
+  <div class="spieltz-warranty__content">
+    <img
+      src="{{ 'spieltz-eu-warranty-notice-de.svg' | asset_url }}"
+      alt="{{ image_alt | escape }}"
+      width="794"
+      height="1123"
+      loading="lazy"
+      class="spieltz-warranty__image"
+    >
+    <p class="spieltz-warranty__links">
+      <a href="{{ 'spieltz-eu-warranty-notice-de.svg' | asset_url }}">{{ full_size_label | escape }}</a>
+      <a href="https://europa.eu/youreurope/garantien">{{ eu_link_label | escape }}</a>
+    </p>
+    <div class="spieltz-warranty__text" lang="de">
+      <h2>{{ text_title | escape }}</h2>
+      <h3>Gesetzliche Gewährleistung</h3>
+      <p>Mindestens zwei Jahre gesetzliche Gewährleistung der Vertragsmäßigkeit für Waren, die in der Europäischen Union verkauft werden.</p>
+      <p>Verbraucherinnen und Verbraucher können ihre Rechte im Rahmen des gesetzlichen Gewährleistungsrechts geltend machen, z. B. wenn die Waren</p>
+      <ul><li>nicht der Beschreibung entsprechen,</li><li>nicht bestimmungsgemäß funktionieren.</li></ul>
+      <p>Verkäufer haften für jede Vertragswidrigkeit, die zum Zeitpunkt der Lieferung der Waren bestand und innerhalb des Zeitraums der gesetzlichen Gewährleistung erkennbar wird.</p>
+      <p>Verkäufer müssen in solchen Fällen Folgendes anbieten:</p>
+      <ul><li>kostenlose Nachbesserung oder kostenlose Ersatzlieferung,</li><li>in bestimmten Fällen eine Preisminderung oder eine vollständige Erstattung des Kaufpreises.</li></ul>
+      <p>In einigen Ländern gilt ein längerer Zeitraum für die gesetzliche Gewährleistung. Für gebrauchte Waren kann ein kürzerer Zeitraum gelten, jedoch nicht weniger als ein Jahr.</p>
+      <p>Für weitere Informationen zu Ihren Rechten in einem bestimmten Land scannen Sie den nachstehenden QR-Code oder fragen Sie den Verkäufer.</p>
+      <h3>Was ist zu tun, wenn Sie vertragswidrige Waren erhalten?</h3>
+      <ol><li>Melden Sie dem Verkäufer das Problem so bald wie möglich.</li><li>Legen Sie einen Kaufnachweis vor, z. B. die Quittung, Rechnung oder einen Kontoauszug.</li></ol>
+      <p>Verkäufer und Hersteller können auch gewerbliche Garantien gewähren, die unabhängig von der gesetzlichen Gewährleistung gelten. Diese GARAN-Kennzeichnung zeigt beispielsweise, dass der Hersteller eine gewerbliche Haltbarkeitsgarantie ohne zusätzliche Kosten gewährt, die die gesamte Ware abdeckt.</p>
+    </div>
+  </div>
+</details>
+
+{% stylesheet %}
+  .spieltz-warranty {
+    color: rgb(var(--color-foreground));
+    background: rgb(var(--color-background));
+    margin-block: 0.8rem;
+  }
+  .spieltz-warranty > summary {
+    display: list-item;
+    list-style: disclosure-closed inside;
+    position: static;
+    min-height: 4.4rem;
+    padding-block: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .spieltz-warranty[open] > summary { list-style-type: disclosure-open; }
+  .spieltz-warranty > summary::before { display: none; }
+  .spieltz-warranty > summary:focus-visible {
+    outline: 0.2rem solid currentColor;
+    outline-offset: 0.2rem;
+  }
+  .spieltz-warranty__content { max-width: 79.4rem; margin-inline: auto; }
+  .spieltz-warranty__image { display: block; width: 100%; height: auto; }
+  .spieltz-warranty__links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+  .spieltz-warranty__links a { color: inherit; padding-block: 0.8rem; }
+  .spieltz-warranty__text { font-size: 1.6rem; line-height: 1.6; overflow-wrap: anywhere; }
+  .spieltz-warranty__text h2 { font-size: 2.2rem; }
+  .spieltz-warranty__text h3 { font-size: 1.8rem; }
+{% endstylesheet %}

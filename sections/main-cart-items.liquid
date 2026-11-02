@@ -70,6 +70,12 @@
 
             <tbody>
               {%- for item in cart.items -%}
+                {%- liquid
+                  assign spieltz_pack_product = false
+                  if item.product.handle == 'spieltz-halmakegel-25x25x60-mm-buche-lose' or item.product.handle == 'spieltz-blanko-spielkarten-pokergrosse-63x88-mm-lackiert'
+                    assign spieltz_pack_product = true
+                  endif
+                -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     {% if item.image %}
@@ -219,8 +225,8 @@
 
                   <td class="cart-item__quantity">
                     <div class="cart-item__quantity-wrapper">
-                      <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
-                        {{ 'products.product.quantity.label' | t }}
+                      <label class="{% if spieltz_pack_product %}caption{% else %}visually-hidden{% endif %}" for="Quantity-{{ item.index | plus: 1 }}">
+                        {% if spieltz_pack_product %}{{ 'pack_quantity_label' | t }}{% else %}{{ 'products.product.quantity.label' | t }}{% endif %}
                       </label>
                       <quantity-input class="quantity cart-quantity">
                         <button class="quantity__button no-js-hidden" name="minus" type="button">
@@ -243,7 +249,7 @@
                           {% endif %}
                           step="{{ item.variant.quantity_rule.increment }}"
                           {% # theme-check-enable %}
-                          aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                          aria-label="{% if spieltz_pack_product %}{{ 'pack_quantity_input' | t: product: item.product.title | escape }}{% else %}{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}{% endif %}"
                           id="Quantity-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
                         >
@@ -382,6 +388,16 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
-  ]
+  ],
+  "locales": {
+    "de": {
+      "pack_quantity_label": "Anzahl Packungen",
+      "pack_quantity_input": "Anzahl Packungen für {{ product }}"
+    },
+    "en": {
+      "pack_quantity_label": "Number of packs",
+      "pack_quantity_input": "Number of packs for {{ product }}"
+    }
+  }
 }
 {% endschema %}

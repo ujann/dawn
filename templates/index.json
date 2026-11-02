@@ -86,8 +86,8 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
     "featured_collection": {
@@ -226,12 +226,107 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "spieltz_einstieg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Spiele, Spielmaterial und Blanko-Sets für deine Ideen",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entdecke Familienspiele, gestalte dein eigenes Spiel oder finde passende Figuren und Würfel.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    },
+    "spieltz_kaufwege": {
+      "type": "multicolumn",
+      "blocks": {
+        "spiele": {
+          "type": "column",
+          "settings": {
+            "title": "Spiele entdecken",
+            "text": "<p><a href=\"/collections/familienspiele\">Familienspiele</a><br/><a href=\"/collections/strategiespiele\">Strategiespiele</a><br/><a href=\"/collections/partyspiele\">Partyspiele</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "blanko": {
+          "type": "column",
+          "settings": {
+            "title": "Eigenes Spiel gestalten",
+            "text": "<p><a href=\"/collections/blanko-brettspiele\">Blanko-Brettspiele</a><br/><a href=\"/collections/blanko-karten\">Blanko-Karten</a><br/><a href=\"/collections/kreativ-sets\">Kreativ-Sets</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "material": {
+          "type": "column",
+          "settings": {
+            "title": "Spielmaterial finden",
+            "text": "<p><a href=\"/collections/spielfiguren\">Spielfiguren</a><br/><a href=\"/collections/wurfel\">Würfel</a><br/><a href=\"/collections/spielsteine-chips\">Spielsteine &amp; Chips</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "riesen": {
+          "type": "column",
+          "settings": {
+            "title": "Riesen-Spiele entdecken",
+            "text": "<p><a href=\"/collections/riesen-brettspiele\">Riesen-Brettspiele</a><br/><a href=\"/collections/riesen-spielmaterial\">Großes Spielmaterial</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "spiele",
+        "blanko",
+        "material",
+        "riesen"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 24
+      }
     }
   },
   "order": [
+    "spieltz_einstieg",
+    "spieltz_kaufwege",
+    "featured_collection",
     "image_banner",
     "rich_text",
-    "featured_collection",
     "collage",
     "video",
     "multicolumn"

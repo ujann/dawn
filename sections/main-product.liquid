@@ -206,8 +206,16 @@
                 {% # theme-check-disable %}
                 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
                 {% # theme-check-enable %}
+                {%- assign spieltz_pack_product = false -%}
+                {%- if product.id == 8883485507928 or product.id == 8883485344088 -%}
+                  {%- assign spieltz_pack_product = true -%}
+                {%- endif -%}
                 <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
-                  {{ 'products.product.quantity.label' | t }}
+                  {%- if spieltz_pack_product -%}
+                    {{ 'pack_quantity_label' | t }}
+                  {%- else -%}
+                    {{ 'products.product.quantity.label' | t }}
+                  {%- endif -%}
                   <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
                     <span class="loading-overlay hidden">
                       <span class="loading-overlay__spinner">
@@ -237,6 +245,9 @@
                     type="number"
                     name="quantity"
                     id="Quantity-{{ section.id }}"
+                    {% if spieltz_pack_product %}
+                      aria-describedby="PackQuantityHelp-{{ section.id }}"
+                    {% endif %}
                     data-cart-quantity="{{ cart_qty }}"
                     data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
                     min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
@@ -255,6 +266,11 @@
                     {% render 'icon-plus' %}
                   </button>
                 </quantity-input>
+                {%- if spieltz_pack_product -%}
+                  <p class="caption" id="PackQuantityHelp-{{ section.id }}">
+                    {{ 'pack_quantity_help' | t }}
+                  </p>
+                {%- endif -%}
                 <div class="quantity__rules caption no-js-hidden">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                     <span class="divider">
@@ -550,13 +566,13 @@
               "sku": {{ variant.sku | json }},
             {%- endif -%}
             {%- if variant.barcode.size == 12 -%}
-              "gtin12": {{ variant.barcode }},
+              "gtin12": {{ variant.barcode | json }},
             {%- endif -%}
             {%- if variant.barcode.size == 13 -%}
-              "gtin13": {{ variant.barcode }},
+              "gtin13": {{ variant.barcode | json }},
             {%- endif -%}
             {%- if variant.barcode.size == 14 -%}
-              "gtin14": {{ variant.barcode }},
+              "gtin14": {{ variant.barcode | json }},
             {%- endif -%}
             "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
             "price" : {{ variant.price | divided_by: 100.00 | json }},
@@ -572,6 +588,16 @@
 {% schema %}
 {
   "name": "t:sections.main-product.name",
+  "locales": {
+    "de": {
+      "pack_quantity_label": "Anzahl Packungen",
+      "pack_quantity_help": "Die gewählte Variante bestimmt die Stückzahl pro Packung. Hier wählst du die Anzahl der Packungen."
+    },
+    "en": {
+      "pack_quantity_label": "Number of packs",
+      "pack_quantity_help": "The selected variant determines the number of pieces per pack. Choose how many packs you want."
+    }
+  },
   "tag": "section",
   "class": "section",
   "blocks": [

@@ -982,9 +982,6 @@
         "image_2": {
           "label": "Andet billede"
         },
-        "color_scheme": {
-          "info": "Synlig, når containeren vises."
-        },
         "stack_images_on_mobile": {
           "label": "Stabl billeder på mobilenheder"
         },
@@ -2657,6 +2654,9 @@
             "label": "Højre"
           },
           "label": "Justering af indhold på mobil"
+        },
+        "color_scheme": {
+          "info": "Synlig, når containeren vises."
         }
       },
       "blocks": {

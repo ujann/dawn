@@ -1,0 +1,32 @@
+{% liquid
+  assign notice_title = 'notice_title' | t
+  assign image_alt = 'image_alt' | t
+  assign full_size_label = 'full_size_label' | t
+  assign eu_link_label = 'eu_link_label' | t
+  assign text_title = 'text_title' | t
+%}
+
+{% render 'spieltz-warranty-notice', notice_title: notice_title, image_alt: image_alt, full_size_label: full_size_label, eu_link_label: eu_link_label, text_title: text_title %}
+
+{% schema %}
+{
+  "name": "Gewährleistungsrechte",
+  "settings": [],
+  "locales": {
+    "en": {
+      "notice_title": "Your legal guarantee rights",
+      "image_alt": "Official EU legal guarantee notice in German. Full German text below the image.",
+      "full_size_label": "Open the original image at full size",
+      "eu_link_label": "More information on the EU portal",
+      "text_title": "Text of the German EU notice"
+    },
+    "de": {
+      "notice_title": "Deine gesetzlichen Gewährleistungsrechte",
+      "image_alt": "Offizielle EU-Mitteilung zur gesetzlichen Gewährleistung. Vollständige Textfassung unterhalb der Grafik.",
+      "full_size_label": "Originalgrafik in voller Größe öffnen",
+      "eu_link_label": "Weitere Informationen auf dem EU-Portal",
+      "text_title": "Textfassung der deutschen EU-Mitteilung"
+    }
+  }
+}
+{% endschema %}

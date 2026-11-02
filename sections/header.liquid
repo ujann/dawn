@@ -144,6 +144,10 @@
 </svg>
 
 {%- liquid
+  assign spieltz_header_tag = 'div'
+  if section.settings.sticky_header_type != 'none'
+    assign spieltz_header_tag = 'sticky-header'
+  endif
   for block in section.blocks
     if block.type == '@app'
       assign has_app_block = true
@@ -151,7 +155,7 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<{{ spieltz_header_tag }}{% if section.settings.sticky_header_type != 'none' %} data-sticky-type="{{ section.settings.sticky_header_type }}"{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -347,7 +351,7 @@
       </a>
     </div>
   </header>
-</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+</{{ spieltz_header_tag }}>
 
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}

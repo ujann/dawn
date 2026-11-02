@@ -267,8 +267,11 @@
               </small>
             {%- endif -%}
           </div>
+          {%- if shop.privacy_policy != blank -%}
+            <p class="article-template__comment-warning caption"><a href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title | escape }}</a></p>
+          {%- endif -%}
           {%- if blog.moderated? -%}
-            <p class="article-template__comment-warning caption">{{ 'blogs.article.moderated_html' | t }}</p>
+            <p class="article-template__comment-warning caption">{{ 'blogs.article.moderated' | t }}</p>
           {%- endif -%}
           <input type="submit" class="button" value="{{ 'blogs.article.post' | t }}">
         {% endform %}

@@ -982,9 +982,6 @@
         "image_2": {
           "label": "Drugi obraz"
         },
-        "color_scheme": {
-          "info": "Widoczne podczas wyświetlania kontenera."
-        },
         "stack_images_on_mobile": {
           "label": "Układaj obrazy w stosy na urządzeniu mobilnym"
         },
@@ -2657,6 +2654,9 @@
             "label": "Prawa strona"
           },
           "label": "Wyrównanie treści na urządzeniu mobilnym"
+        },
+        "color_scheme": {
+          "info": "Widoczne podczas wyświetlania kontenera."
         }
       },
       "blocks": {

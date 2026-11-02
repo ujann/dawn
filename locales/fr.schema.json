@@ -982,9 +982,6 @@
         "image_2": {
           "label": "Deuxième image"
         },
-        "color_scheme": {
-          "info": "Visible lorsque le conteneur est affiché."
-        },
         "stack_images_on_mobile": {
           "label": "Empiler des images sur un mobile"
         },
@@ -2657,6 +2654,9 @@
             "label": "Droite"
           },
           "label": "Alignement du contenu sur mobile"
+        },
+        "color_scheme": {
+          "info": "Visible lorsque le conteneur est affiché."
         }
       },
       "blocks": {

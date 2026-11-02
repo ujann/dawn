@@ -11,10 +11,24 @@
   {% render 'price', product: product %}
 {% endcomment %}
 {%- liquid
+  assign display_price_varies = false
   if use_variant
     assign target = product.selected_or_first_available_variant
   else
     assign target = product
+    assign display_price_varies = product.price_varies
+    if product.price == 0 and product.available
+      assign available_variants = product.variants | where: 'available', true | sort: 'price'
+      assign lowest_available_variant = available_variants.first
+      assign highest_available_variant = available_variants.last
+      if lowest_available_variant.price > 0
+        assign target = lowest_available_variant
+        assign display_price_varies = false
+        if highest_available_variant.price > lowest_available_variant.price
+          assign display_price_varies = true
+        endif
+      endif
+    endif
   endif
 
   assign compare_at_price = target.compare_at_price
@@ -25,7 +39,7 @@
     assign money_price = price | money_with_currency
   endif
 
-  if target == product and product.price_varies
+  if display_price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}

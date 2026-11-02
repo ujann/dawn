@@ -72,8 +72,9 @@
         {% for variant in product.variants %}
           {% assign variant_option_value = variant[option_number] %}
           {% if variant_option_value == value and variant_found == 0 %}
-            <!-- variant.image: {{ variant.image.id }} {{ variant.image | json }} -->
-            <img name="{{ value }}" src="{{ variant.image | image_url: width: 50 }}" title="{{ value }}" style="object-fit: scale-down; min-width: 50px; max-height: 50px;"/>
+            {% if variant.image != blank %}
+              <img name="{{ value | escape }}" src="{{ variant.image | image_url: width: 50 }}" width="50" height="{{ 50 | divided_by: variant.image.aspect_ratio | round }}" alt="{{ value | escape }}" title="{{ value | escape }}" style="object-fit: scale-down; min-width: 50px; max-height: 50px;">
+            {% endif %}
             <div class="variant-pill-image_text">{{ value }}</div>
             {% assign variant_found = 1 %}
             {% comment %}
