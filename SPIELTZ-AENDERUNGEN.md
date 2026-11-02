@@ -43,3 +43,12 @@ Jeder Eintrag nennt Zweck, Code-Stand, Shopify-Ziel, Prüfung und Rückweg. Ein 
 - Rückweg: dieser Dokumentationscommit kann separat rückgängig gemacht werden; Shopdarstellung bleibt davon unberührt.
 
 Die reine Sicherung/Dokumentation ist auf `codex/spieltz-vorschau-2026-11-02` gepusht. `10.0.0-spieltz` blieb unverändert. Für diese Commits wurde der geerbte, noch ungeprüfte Push-Workflow mit `[skip ci]` übersprungen; keine Workflow- oder Secret-Einstellung verändert.
+
+## 03.11.2026 – Figuren-Zuordnung aus der Claude-Übergabe geprüft
+
+- Inhalt: [Bildzuordnung und Einbaustatus](SPIELTZ-BILDER.md). Kein Theme-Code und keine Theme-Einstellung geändert.
+- Quelle: ergänzende Übergabe mit Bild-README; die vier Kachelmotive sind jetzt eindeutig zugeordnet. Dateien ausdrücklich nur Screenshot-Referenzen, Originale aus JTL noch benötigt.
+- Lokaler Abgleich: vier Figuren über den kleinen Kacheltiteln; 1280-Pixel-Desktop und 390-Pixel-Mobilansicht geprüft. Alle Bilder geladen, Bildhöhen 140/110 Pixel, Titel 18/17 Pixel, kein horizontaler Überlauf, elf Einkaufslinks erhalten.
+- Shopify: keine Übertragung, keine Bild- oder Produktänderung, keine Veröffentlichung. Die Screenshot-Referenzen wurden nicht als fertige Shopbilder eingesetzt.
+- Rückweg: nur dieser Dokumentationsstand würde zurückgenommen; kein Shopify-Rollback nötig. Die lokale Figurenansicht ist ein zusätzlicher Vergleich zum bestehenden Stand.
+- Nächster Schritt: passende JTL-Originale anhand dieser Zuordnung beziehen und deren Einsatz in einem gesonderten, Git-gesicherten Vorschaupaket prüfen.
