@@ -13,4 +13,4 @@ Die Dateien sind bytegleich zur freigegebenen Claude-Übergabe. Die Figur wird p
 
 Das obere Sortimentsbild und die kompakte Einführung bleiben erhalten. Bildfläche 140 Pixel auf Desktop, 110 Pixel mobil; Titel weiterhin 18 beziehungsweise 17 Pixel. Alle elf bestehenden Einkaufslinks bleiben erhalten. Die große Hero-Figur und das zusätzliche Spielelemente-Banner werden in dieser Variante nicht eingebaut.
 
-Status: Code für den unveröffentlichten Entwurf vorbereitet; tatsächlicher Übertragungs- und Prüfstand in [SPIELTZ-AENDERUNGEN.md](SPIELTZ-AENDERUNGEN.md). Produktbilder und Produktstammdaten bleiben bei JTL. Der Live-Shop wird nicht veröffentlicht. Die Position des Gewährleistungszugangs ist ein eigener offener Punkt.
+Status: im unveröffentlichten Entwurf eingebaut und auf Desktop sowie 390 Pixel mobil geprüft; tatsächlicher Übertragungs- und Prüfstand in [SPIELTZ-AENDERUNGEN.md](SPIELTZ-AENDERUNGEN.md). Produktbilder und Produktstammdaten bleiben bei JTL. Der Live-Shop wird nicht veröffentlicht. Die Position des Gewährleistungszugangs ist ein eigener offener Punkt.

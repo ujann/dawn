@@ -60,3 +60,12 @@ Die reine Sicherung/Dokumentation ist auf `codex/spieltz-vorschau-2026-11-02` ge
 - Shopify-Ziel ausschließlich UNPUBLISHED `200823046488`. Vor diesem Commit noch nicht übertragen. Nach Übertragung folgt ein separater Prüfvermerk.
 - Prüfung vor Transfer: Quellbilder bytegleich; Liquid/CSS/JSON bestehen den Shopify-Validator. Vollständiger Theme Check 3.24.0: 202 Quelldateien, 60 Checks, weiterhin 2 vorhandene Fehler/22 Warnungen außerhalb der Änderung; keine neuen Befunde. Cacheanlage im Sandboxbetrieb nicht möglich, mitgelieferte Prüfschemata genutzt. Kein Produktwrite, keine Veröffentlichung.
 - Rückweg: die sieben Theme-Dateiänderungen dieses Pakets als neuen Rücknahme-Commit zurücknehmen und den so gesicherten Stand ausschließlich im Entwurf übertragen. Vorheriger Stand: `a5bcf74`; die vier neu hinzugefügten Assets können dabei kontrolliert entfernt werden.
+
+### Übertragung und Rückprüfung abgeschlossen
+
+- Code-Commit: [`1903d00`](https://github.com/ujann/dawn/commit/1903d00010056e6d0575e02ccf5e209e81062f8d), vor dem Transfer gepusht; alle neun Remote-Blobs gegen den Commit geprüft.
+- Übertragen: drei Textdateien und vier PNG-Assets ausschließlich in UNPUBLISHED `200823046488`. API meldet keine Fehler; asynchrone Bildübernahmen anschließend im vollständigen Manifest und in der echten Darstellung bestätigt.
+- Rücklesung: Liquid/CSS textgleich, JSON semantisch identisch; alle vier Bild-MD5s identisch zur Git-gesicherten Quelle. Exakt sieben erwartete Dateideltas, nun 301 Dateien im Entwurf. MAIN `159373328728`: weiterhin 288 Dateien, sämtliche Prüfsummen zum vorherigen Manifest unverändert.
+- Browser: echte Draft-Vorschau Desktop 1473 px und mobil 390 px; vier richtige geladene Motive, Bildflächen 140/110 px, Titel 18/17 px, elf Einkaufslinks, kein horizontaler Überlauf. Ursprüngliches oberes Sortimentsbild und Einführung sichtbar; Produktbilder weiterhin mit türkisen 2-px-Rahmen. Link „Familienspiele“ führt zur richtigen Kategorie. Kein Kauf-/Checkout-Eingriff.
+- Lokale Freigabeansicht aus dem tatsächlichen Shopify-Rendering erneuert. Kein Produkt-/JTL-Write, kein Push auf `10.0.0-spieltz`, kein Merge und keine Veröffentlichung.
+- Noch separat offen: Position des Gewährleistungszugangs und abschließende Freigabe des gesamten Designs. Der Figuren-Einbau benötigt keine JTL-Dateien mehr.
