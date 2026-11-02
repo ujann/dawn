@@ -20,6 +20,11 @@
   assign variants_option2_arr = product.variants | map: 'option2'
   assign variants_option3_arr = product.variants | map: 'option3'
 
+  assign spieltz_pack_product = false
+  if product.id == 8883485507928 or product.id == 8883485344088
+    assign spieltz_pack_product = true
+  endif
+
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 
@@ -84,8 +89,19 @@
           {% endif %}
         {%- endfor -%}
       {% else %}
-        {{ value }}
+        {{ value | escape }}
+        {% if spieltz_pack_product and option.name == 'Packungsgröße' %}
+          <span class="spieltz-option-price" data-spieltz-option-price>
+            {% for variant in product.variants %}
+              {% if variant.option1 == product.selected_or_first_available_variant.option1 and variant.option2 == value %}
+                {% render 'spieltz-money', amount: variant.price %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          </span>
+        {% endif %}
       {% endif %}
+      <span class="spieltz-option-check" aria-hidden="true">✓</span>
     </label>
 
   {%- elsif block.settings.picker_type == 'dropdown' -%}

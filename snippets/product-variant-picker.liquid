@@ -22,8 +22,8 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input">
-          <legend class="form__label">{{ option.name }}</legend>
+        <fieldset class="js product-form__input" data-option-position="{{ option.position }}">
+          <legend class="form__label">{{ option.name | escape }}{% if option.name == 'Farbe' %}: <strong data-spieltz-selected-color>{{ option.selected_value | escape }}</strong>{% endif %}</legend>
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
       {%- endfor -%}

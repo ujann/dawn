@@ -1,0 +1,74 @@
+:root{--sp-navy:#073353;--sp-petrol:#117d9b;--sp-link:#0e6a84;--sp-grey:#f6f6f6;--sp-border:#117d9b;--font-body-family:Figtree,system-ui,sans-serif;--font-heading-family:Figtree,system-ui,sans-serif;--font-heading-weight:700;--page-width:120rem;--buttons-radius:0px;--inputs-radius:0px;--variant-pills-radius:0px}
+body{color:var(--sp-navy);font-size:1.7rem;line-height:1.7;letter-spacing:0}
+h1,h2,h3,h4,h5,h6,.h0,.h1,.h2,.h3,.h4{font-family:var(--font-heading-family);font-weight:700;color:rgb(var(--color-foreground));letter-spacing:0}
+h1,.h1{font-size:4.8rem;line-height:1.1}h2,.h2{font-size:3rem;line-height:1.2}
+body :is(button,.button,input,select,textarea,.card,.card__inner,.media,.global-media-settings,.multicolumn-card,.product__media,.menu-drawer,.predictive-search,.shopify-payment-button__button){border-radius:0}
+a,.link{color:var(--sp-link);text-underline-offset:.3rem}a:hover,.link:hover{color:#0b5a70}
+:focus-visible{outline:3px solid var(--sp-navy);outline-offset:2px}
+.button{min-height:5.2rem;padding:0 2.8rem;font-size:1.6rem;font-weight:600;gap:1.2rem;background:var(--sp-petrol);color:#fff}
+.button:hover{background:#0b5a70;color:#fff}.button:after,.button:before{border-radius:0;box-shadow:none}
+.button--secondary{background:#fff;color:var(--sp-link);border:2px solid var(--sp-link)}
+.header-wrapper,.footer{background:var(--sp-navy);color:#fff}
+.header__menu-item,.header__heading-link,.header__icon,.footer a,.footer h2,.footer .rte{color:#fff}
+.header__menu-item{font-size:1.5rem;min-height:4.4rem}.header__active-menu-item{color:#9dd3d9;text-decoration-thickness:2px}
+.header-wrapper :focus-visible,.footer :focus-visible{outline-color:#fff}
+.header__icon{width:4.4rem;height:4.4rem}.cart-count-bubble{border-radius:50%;background:#9dd3d9;color:var(--sp-navy)}
+.header__submenu,.mega-menu__content,.menu-drawer{background:var(--sp-navy);color:#fff}.mega-menu__link,.menu-drawer__menu-item,.menu-drawer a{color:#fff}.menu-drawer__menu-item--active{background:rgba(255,255,255,.1)}
+.spieltz-warranty{max-width:none;background:var(--sp-grey);margin:0;padding-inline:max(1.6rem,calc((100vw - 112rem)/2));border-bottom:1px solid #e1e7eb}
+.spieltz-warranty>summary{font-size:1.5rem;min-height:4.4rem}.spieltz-warranty__content{padding-block:1.6rem 3.2rem}
+.spieltz-home-intro{display:flex;align-items:center;justify-content:space-between;gap:4.8rem;padding-block:5.6rem 4.8rem}
+.spieltz-home-intro__copy{max-width:66rem}.spieltz-home-intro h1{margin:0 0 2.4rem}.spieltz-home-intro .rte{color:#3d5666;max-width:57rem;margin-bottom:2.8rem}.spieltz-home-intro__art{flex:0 0 30%;text-align:center}.spieltz-home-intro__art img{max-height:30rem;width:auto;max-width:100%;height:auto}
+[id$="__spieltz_kaufwege"] .multicolumn-card{background:var(--sp-grey);height:100%;padding:2.4rem}
+[id$="__spieltz_kaufwege"] .multicolumn-card__info{padding:0}
+[id$="__spieltz_kaufwege"] h3{font-size:2.1rem;line-height:1.25;min-height:5.3rem;margin-bottom:1.6rem}
+[id$="__spieltz_kaufwege"] .rte p{margin:0}[id$="__spieltz_kaufwege"] .rte br{display:none}
+[id$="__spieltz_kaufwege"] .rte a{display:flex;align-items:center;justify-content:space-between;min-height:4.6rem;border-top:1px solid #e1e7eb;font-size:1.6rem;font-weight:600;text-decoration:none;gap:1rem}
+[id$="__spieltz_kaufwege"] .rte a:after{content:'→'}[id$="__spieltz_kaufwege"] .multicolumn-card__image-wrapper{height:15rem;margin:0 0 1.6rem}
+[id$="__spieltz_kaufwege"] .multicolumn-card__image-wrapper .media{height:100%;padding:0!important}[id$="__spieltz_kaufwege"] img{object-fit:contain}
+.product-card-wrapper .card__inner{border:2px solid var(--sp-border);background:#fff}
+.product-card-wrapper .card__media{margin:0}.product-card-wrapper .card__media img{mix-blend-mode:normal;object-fit:contain}
+.card__heading{font-size:1.6rem;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-weight:500}
+.card-information .price{font-size:1.7rem;font-weight:700}.card__information .caption-with-letter-spacing{font-size:1.2rem;letter-spacing:.08em;color:#3d5666}
+.product__media-wrapper .product__media{border:2px solid var(--sp-border);background:#fff}
+.product__title h1{font-size:3.2rem;line-height:1.2}.product__info-container .price{font-size:3.2rem;font-weight:700}
+body .product-form__input input[type=radio]+label{position:relative;border:2px solid #b8c6ce;background:#fff;color:var(--sp-navy);border-radius:0;padding:1.2rem;min-height:4.8rem;line-height:1.35;vertical-align:top;margin:.4rem .6rem .4rem 0;font-weight:500}
+body .product-form__input input[type=radio]:checked+label{border-color:var(--sp-petrol);background:#edf7f9;color:var(--sp-navy);font-weight:700}
+body .product-form__input input[type=radio]:focus-visible+label{outline:3px solid var(--sp-navy);outline-offset:2px}
+body .product-form__input input[type=radio].disabled+label{text-decoration:line-through;opacity:.7}
+body .product-form__input input[type=radio]+label .variant-pill-image_text{font-size:1.4rem;padding-top:.6rem}
+.spieltz-option-check{display:none;position:absolute;top:0;right:0;background:var(--sp-petrol);color:#fff;width:2rem;height:2rem;text-align:center;line-height:2rem;font-size:1.4rem}
+input:checked+label>.spieltz-option-check{display:block}.spieltz-option-price{display:block;font-size:1.4rem;margin-top:.4rem}
+.form__label{font-weight:600;font-size:1.6rem}.quantity{min-height:4.8rem}.quantity:after{border-radius:0;box-shadow:0 0 0 1px #b8c6ce}.quantity__button{width:4.8rem}
+.spieltz-pack-summary{font-size:1.6rem;background:var(--sp-grey);padding:1.6rem;font-weight:600;border-left:3px solid var(--sp-petrol)}
+.spieltz-pack-summary[data-state=unavailable],.spieltz-pack-summary[data-state=sold-out]{background:#fcede8;border-color:#e86f4a}
+.cart-item__image-container{border:2px solid var(--sp-border)}.cart-item__name{font-size:1.8rem;line-height:1.4}.cart-item{border-bottom:1px solid #e1e7eb}
+.cart-items cart-remove-button .button{color:var(--sp-link);background:transparent;font-size:1.4rem;text-decoration:underline;padding:.8rem;min-width:0;min-height:4.4rem}
+.cart__blocks{background:var(--sp-grey);padding:2.4rem}.spieltz-cart-pieces{color:#3d5666;font-size:1.5rem}
+.footer-block--menu{text-align:left}.footer-block__details-content{font-size:1.5rem}.footer-block--menu a{min-height:4.4rem;display:inline-flex;align-items:center}.footer-block.grid__item:has(.footer-block__details-content.rte){flex:2 1 60%}.footer-block__details-content.rte{columns:2;column-gap:3.2rem}.footer-block__details-content.rte p{margin-top:0}
+[id$="__rich_text"] .rich-text__blocks{max-width:68rem}[id$="__rich_text"] h2{font-size:3rem}[id$="__rich_text"] .rich-text__text:nth-child(2){font-size:1.4rem;color:#3d5666;margin-top:1.6rem}[id$="__image_banner"] .banner__media{background:var(--sp-grey)}
+@media(min-width:990px){.header--middle-left{grid-template-columns:auto 1fr auto;column-gap:2.4rem}.header__inline-menu{margin-top:0}.header__heading-logo-wrapper{width:14rem}}
+@media(max-width:989px){.header{padding:1.2rem 1.6rem}.header__heading-logo-wrapper{width:12rem}.footer-block__details-content.rte{columns:1}}
+@media(max-width:749px){body{font-size:1.6rem}.page-width{padding-inline:1.6rem}h1,.h1{font-size:3.2rem;line-height:1.125}h2,.h2{font-size:2.4rem}.spieltz-home-intro{gap:2.4rem;padding-block:3.2rem;flex-direction:column;align-items:stretch}.spieltz-home-intro__art{max-height:20rem}.spieltz-home-intro__art img{max-height:20rem}.spieltz-home-intro h1{margin-bottom:1.6rem}.spieltz-home-intro .button{width:100%;padding-inline:1.6rem}[id$="__spieltz_kaufwege"] .multicolumn-card{padding:1.6rem}[id$="__spieltz_kaufwege"] h3{font-size:1.9rem;min-height:4.8rem}[id$="__spieltz_kaufwege"] .rte a{font-size:1.4rem;line-height:1.35;min-height:4.8rem}[id$="__spieltz_kaufwege"] .multicolumn-list{gap:1.6rem}[id$="__spieltz_kaufwege"] .grid__item{width:calc(50% - .8rem);max-width:calc(50% - .8rem)}.product__title h1{font-size:2.4rem}.product__info-container .price{font-size:2.8rem}body .product-form__input{max-width:100%}body .product-form__input input[type=radio]+label{padding:1rem;min-width:6.2rem}body .product-form__input input[type=radio]+label img{max-width:4.4rem;min-width:4.4rem!important}.cart__blocks{padding:1.6rem}.footer{padding-top:3.2rem}.footer-block__details-content.rte{columns:1}}
+.spieltz-story{background:var(--sp-grey);padding-block:4.8rem}.spieltz-story__content{max-width:68rem;margin:auto}.spieltz-story figure{margin:0 0 3.2rem}.spieltz-story blockquote{border:0;margin:0;padding:0;font-size:3rem;line-height:1.3;font-weight:700;font-style:normal}.spieltz-story figcaption{font-size:1.4rem;margin-top:1.6rem;color:#3d5666}
+@media(max-width:749px){.spieltz-story{padding-block:3.2rem}.spieltz-story blockquote{font-size:2.4rem}}
+body .spieltz-home-intro{display:block;padding-block:2.4rem 2rem}
+body .spieltz-home-intro__copy{max-width:96rem}
+body .spieltz-home-intro h1{font-size:2.8rem;line-height:1.2;margin:0 0 1.2rem}
+body .spieltz-home-intro .rte{max-width:96rem;font-size:1.6rem;line-height:1.65;margin:0}
+body .spieltz-home-intro .rte p{margin:0}
+body [id$="__image_banner"] .banner{display:block;min-height:0}
+body [id$="__image_banner"] .banner .banner__media{position:static;display:block;width:100%;height:auto}
+body [id$="__image_banner"] .banner .banner__media>img{position:static;display:block;width:100%;height:auto;object-fit:contain}
+body [id$="__image_banner"] .banner::before,body [id$="__image_banner"] .banner .banner__media::before{display:none!important}
+body [id$="__image_banner"] .banner__content{display:none}
+body [id$="__spieltz_kaufwege"] .multicolumn-card{padding:1.6rem}
+body [id$="__spieltz_kaufwege"] h3{font-size:1.8rem;line-height:1.25;min-height:0;margin-bottom:.8rem}
+body [id$="__spieltz_kaufwege"] .rte a{font-size:1.5rem;min-height:4.4rem;gap:.6rem}
+body [id$="__spieltz_kaufwege"] .multicolumn-card__image-wrapper{height:10rem;margin-bottom:1.2rem}
+body .product-card-wrapper .card__inner{border:2px solid var(--sp-petrol);background:#fff}
+body .product__media-wrapper .product__media,body .cart-item__image-container{border:2px solid var(--sp-petrol)}
+body .spieltz-story{padding-block:3.2rem}
+body .spieltz-story__content{max-width:80rem;font-size:1.6rem;line-height:1.7}
+body .spieltz-story figure{background:#fff;padding:2.4rem;margin:2.4rem 0 0}
+body .spieltz-story blockquote{font-size:2.4rem;line-height:1.35}
+@media(max-width:749px){body .spieltz-home-intro{padding-block:2rem 1.6rem}body .spieltz-home-intro h1{font-size:2.4rem}body [id$="__spieltz_kaufwege"] .multicolumn-card{padding:1.2rem}body [id$="__spieltz_kaufwege"] h3{font-size:1.7rem;min-height:0;margin-bottom:.8rem}body [id$="__spieltz_kaufwege"] .rte a{font-size:1.4rem;min-height:4.4rem}body [id$="__spieltz_kaufwege"] .multicolumn-list{gap:1.2rem}body [id$="__spieltz_kaufwege"] .grid__item{width:calc(50% - .6rem);max-width:calc(50% - .6rem)}body .spieltz-story figure{padding:1.6rem}body .spieltz-story blockquote{font-size:2rem}}

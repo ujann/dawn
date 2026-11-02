@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "image_banner": {
@@ -61,50 +52,28 @@
       }
     },
     "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wir spielen alle, wer es weiß, ist klug – Arthur Schnitzler",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Du bist auf der Suche nach lustigen und einfachen Familienspielen? Oder du hast dein eigenes Spiel entwickelt und brauchst Blanko-Spielmaterial, mit dem du es gestalten kannst? Du suchst Spielfiguren, Spielsteine oder Würfel für dein eigenes Spiel oder als Ersatzteile für dein Lieblings-Brettspiel? Dann bist du hier richtig - herzlich willkommen!<br/><br/>In unserem Verlagsprogramm findest einfach zu lernende Familienspiele, die Spaß machen. Kreative lieben unsere Spielfiguren, Würfel und anderes Spiele-Zubehör in vielen verschiedenen Formen und Farben und unser Blanko-Spielmaterial zur Gestaltung eigener Spiele. Stöbere dich durch! Fehlt dir was? Dann schreib uns eine Mail! <a href=\"mailto:info@spieltz.de\" title=\"mailto:info@spieltz.de\">info@spieltz.de</a></p><p></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "type": "spieltz-story",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 28
+        "quote": "Wir spielen alle, wer es weiß, ist klug",
+        "author": "Arthur Schnitzler",
+        "text": "<p>In unserem Verlagsprogramm findest du einfach zu lernende Familienspiele, die Spaß machen. Kreative lieben unsere Spielfiguren, Würfel und anderes Spiele-Zubehör in vielen verschiedenen Formen und Farben und unser Blanko-Spielmaterial zur Gestaltung eigener Spiele. Stöbere dich durch! Fehlt dir was? Dann schreib uns eine Mail! <a href=\"mailto:info@spieltz.de\" title=\"mailto:info@spieltz.de\">info@spieltz.de</a></p>"
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Wir empfehlen dir:",
+        "title": "Wir empfehlen dir",
         "heading_size": "h2",
         "description": "",
         "show_description": true,
         "description_style": "body",
         "collection": "auf-lager",
-        "products_to_show": 8,
+        "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "square",
         "image_shape": "default",
@@ -114,8 +83,8 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 28,
-        "padding_bottom": 36
+        "padding_top": 16,
+        "padding_bottom": 32
       }
     },
     "collage": {
@@ -228,33 +197,13 @@
       }
     },
     "spieltz_einstieg": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Spiele, Spielmaterial und Blanko-Sets für deine Ideen",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Entdecke Familienspiele, gestalte dein eigenes Spiel oder finde passende Figuren und Würfel.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "type": "spieltz-home-intro",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 12
+        "heading": "Spiele, Spielmaterial und Blanko-Sets für deine Ideen",
+        "text": "<p>Du bist auf der Suche nach lustigen und einfachen Familienspielen? Du möchtest dein eigenes Spiel gestalten oder suchst Spielfiguren, Würfel und Ersatzteile für dein Lieblingsspiel? Dann bist du hier richtig – herzlich willkommen!</p>",
+        "button_label": "",
+        "button_link": "shopify://collections/all",
+        "image": ""
       }
     },
     "spieltz_kaufwege": {
@@ -263,7 +212,7 @@
         "spiele": {
           "type": "column",
           "settings": {
-            "title": "Spiele entdecken",
+            "title": "Brett- und Kartenspiele",
             "text": "<p><a href=\"/collections/familienspiele\">Familienspiele</a><br/><a href=\"/collections/strategiespiele\">Strategiespiele</a><br/><a href=\"/collections/partyspiele\">Partyspiele</a></p>",
             "link_label": "",
             "link": ""
@@ -281,7 +230,7 @@
         "material": {
           "type": "column",
           "settings": {
-            "title": "Spielmaterial finden",
+            "title": "Spielmaterial",
             "text": "<p><a href=\"/collections/spielfiguren\">Spielfiguren</a><br/><a href=\"/collections/wurfel\">Würfel</a><br/><a href=\"/collections/spielsteine-chips\">Spielsteine &amp; Chips</a></p>",
             "link_label": "",
             "link": ""
@@ -290,7 +239,7 @@
         "riesen": {
           "type": "column",
           "settings": {
-            "title": "Riesen-Spiele entdecken",
+            "title": "Riesen Spiele",
             "text": "<p><a href=\"/collections/riesen-brettspiele\">Riesen-Brettspiele</a><br/><a href=\"/collections/riesen-spielmaterial\">Großes Spielmaterial</a></p>",
             "link_label": "",
             "link": ""
@@ -306,7 +255,7 @@
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
@@ -322,10 +271,10 @@
     }
   },
   "order": [
+    "image_banner",
     "spieltz_einstieg",
     "spieltz_kaufwege",
     "featured_collection",
-    "image_banner",
     "rich_text",
     "collage",
     "video",

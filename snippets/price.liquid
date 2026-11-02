@@ -34,13 +34,13 @@
   assign compare_at_price = target.compare_at_price
   assign price = target.price | default: 1999
   assign available = target.available | default: false
-  assign money_price = price | money
-  if settings.currency_code_enabled
-    assign money_price = price | money_with_currency
-  endif
+  capture money_price
+    render 'spieltz-money', amount: price
+  endcapture
+  assign money_price = money_price | strip
 
   if display_price_varies
-    assign money_price = 'products.product.price.from_price_html' | t: price: money_price
+    assign money_price = 'products.product.price.from_price_html' | t: price: money_price | replace: 'Ab ', 'ab '
   endif
 -%}
 
@@ -71,11 +71,7 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span>
           <s class="price-item price-item--regular">
-            {% if settings.currency_code_enabled %}
-              {{ compare_at_price | money_with_currency }}
-            {% else %}
-              {{ compare_at_price | money }}
-            {% endif %}
+            {% render 'spieltz-money', amount: compare_at_price %}
           </s>
         </span>
       {%- endunless -%}

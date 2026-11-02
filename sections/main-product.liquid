@@ -270,6 +270,7 @@
                   <p class="caption" id="PackQuantityHelp-{{ section.id }}">
                     {{ 'pack_quantity_help' | t }}
                   </p>
+                  <p class="spieltz-pack-summary" data-spieltz-pack-summary data-section="{{ section.id }}" data-currency="{{ cart.currency.iso_code }}" data-template="{{ 'pack_summary' | t | escape }}" data-unavailable="{{ 'products.product.unavailable' | t | escape }}" data-sold-out="{{ 'products.product.sold_out' | t | escape }}" role="status" aria-live="polite"></p>
                 {%- endif -%}
                 <div class="quantity__rules caption no-js-hidden">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
@@ -590,10 +591,12 @@
   "name": "t:sections.main-product.name",
   "locales": {
     "de": {
+      "pack_summary": "[packs] Packung(en) × [size] Stück = [pieces] Stück · [price]",
       "pack_quantity_label": "Anzahl Packungen",
       "pack_quantity_help": "Die gewählte Variante bestimmt die Stückzahl pro Packung. Hier wählst du die Anzahl der Packungen."
     },
     "en": {
+      "pack_summary": "[packs] pack(s) × [size] pieces = [pieces] pieces · [price]",
       "pack_quantity_label": "Number of packs",
       "pack_quantity_help": "The selected variant determines the number of pieces per pack. Choose how many packs you want."
     }
