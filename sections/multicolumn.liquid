@@ -57,6 +57,24 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
+          {%- liquid
+            assign spieltz_art_asset = blank
+            assign spieltz_art_height = 0
+            case block.settings.spieltz_illustration
+              when 'spiele'
+                assign spieltz_art_asset = 'spieltz-kachel-spiele.png'
+                assign spieltz_art_height = 342
+              when 'blanko'
+                assign spieltz_art_asset = 'spieltz-kachel-blanko.png'
+                assign spieltz_art_height = 458
+              when 'material'
+                assign spieltz_art_asset = 'spieltz-kachel-material.png'
+                assign spieltz_art_height = 395
+              when 'riesen'
+                assign spieltz_art_asset = 'spieltz-kachel-riesen.png'
+                assign spieltz_art_height = 384
+            endcase
+          -%}
           {%- assign empty_column = '' -%}
           {%- if block.settings.image == blank
             and block.settings.title == blank
@@ -116,6 +134,19 @@
                         sizes: sizes,
                         class: 'multicolumn-card__image'
                     }}
+                  </div>
+                </div>
+              {%- elsif spieltz_art_asset != blank -%}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+                  <div class="media media--transparent">
+                    <img
+                      src="{{ spieltz_art_asset | asset_url }}"
+                      alt=""
+                      width="520"
+                      height="{{ spieltz_art_height }}"
+                      loading="eager"
+                      class="multicolumn-card__image"
+                    >
                   </div>
                 </div>
               {%- endif -%}
@@ -386,6 +417,19 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "spieltz_illustration",
+          "label": "Spieltz-Figur",
+          "default": "none",
+          "options": [
+            { "value": "none", "label": "Keine" },
+            { "value": "spiele", "label": "Petrol: Würfel" },
+            { "value": "blanko", "label": "Rosa: Malen" },
+            { "value": "material", "label": "Orange: Werkzeug" },
+            { "value": "riesen", "label": "Mint: Mühle" }
+          ]
         },
         {
           "type": "inline_richtext",

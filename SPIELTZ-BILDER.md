@@ -1,18 +1,16 @@
 # Figuren für die vier Einkaufskacheln
 
-Stand: 03.11.2026. Die bisher fehlende Zuordnung aus dem Claude-Entwurf ist jetzt vorhanden und visuell geprüft.
+Stand: 03.11.2026. Die vier von Claude bereitgestellten Illustrationen werden unverändert als Theme-Assets verwendet. Die frühere Annahme, dafür seien JTL-Originale nötig, wurde ausdrücklich korrigiert: JTL führt die Produktfotos, nicht diese Kategorie-Illustrationen.
 
-| Kachel | Referenzmotiv |
+| Kachel | Theme-Datei |
 | --- | --- |
-| Brett- und Kartenspiele | Petrol-Figur mit Würfeln, `figur-petrol-wuerfel.png` |
-| Eigenes Spiel gestalten | Rosa malende Figur, `figur-rosa-malt.png` |
-| Spielmaterial | Orange bohrende Figur, `figur-orange-bohrt.png` |
-| Riesen Spiele | Mint-Figur mit Mühle-Spielbrett, `figur-mint-muehle.png` |
+| Brett- und Kartenspiele | `assets/spieltz-kachel-spiele.png` (Petrol mit Würfeln) |
+| Eigenes Spiel gestalten | `assets/spieltz-kachel-blanko.png` (Rosa beim Malen) |
+| Spielmaterial | `assets/spieltz-kachel-material.png` (Orange mit Werkzeug) |
+| Riesen Spiele | `assets/spieltz-kachel-riesen.png` (Mint mit Mühle) |
 
-Die übergebenen Dateien sind freigestellte Screenshots mit maximal 520 Pixeln Breite. Ihre README kennzeichnet sie ausdrücklich als Referenzen; Shop-Originale sollen aus JTL kommen. Daher wurden sie nur für einen lokalen Gestaltungsabgleich benutzt. Sie sind weder als Theme-Assets in dieses öffentliche Repository kopiert noch zu Shopify hochgeladen.
+Die Dateien sind bytegleich zur freigegebenen Claude-Übergabe. Die Figur wird pro Kachel über die Einstellung „Spieltz-Figur“ zugeordnet und bleibt beim Umordnen erhalten. Ein im normalen Bildfeld ausgewähltes Bild hat Vorrang. Andere Mehrspalten-Abschnitte erhalten standardmäßig keine Figur.
 
-Der lokale Abgleich kombiniert das vorhandene obere Sortimentsbild und die kompakte Einführung mit den vier Figuren über den Kacheltiteln. Bildfläche 140 Pixel hoch auf Desktop, 110 Pixel mobil; Titel weiterhin 18 beziehungsweise 17 Pixel. Alle elf bestehenden Links bleiben erhalten. Keine zusätzliche große Figur neben der Hauptüberschrift eingeplant, da zuletzt das vorhandene Banner als oberer Einstieg gewählt wurde.
+Das obere Sortimentsbild und die kompakte Einführung bleiben erhalten. Bildfläche 140 Pixel auf Desktop, 110 Pixel mobil; Titel weiterhin 18 beziehungsweise 17 Pixel. Alle elf bestehenden Einkaufslinks bleiben erhalten. Die große Hero-Figur und das zusätzliche Spielelemente-Banner werden in dieser Variante nicht eingebaut.
 
-Für die eigentliche Übernahme werden die vier passenden Originaldateien oder ein konkreter JTL-Exportpfad benötigt. Danach: Originale prüfen, als Theme-Illustrationen im Git-Arbeitsbranch einbauen und sichern, exakt diesen Stand ausschließlich in die unveröffentlichte Vorschau übertragen und dort erneut prüfen. Es geht um Kategorie-Illustrationen; Produktbilder und übrige Produktstammdaten bleiben bei JTL.
-
-Status: **lokale Referenzansicht geprüft, Shopify-Einbau wartet auf Originale**. Die bisherige Shopify-Vorschau und der Live-Shop wurden bei diesem Bildabgleich nicht verändert. Gewährleistungsposition bleibt ein separates offenes Gestaltungsdetail.
+Status: Code für den unveröffentlichten Entwurf vorbereitet; tatsächlicher Übertragungs- und Prüfstand in [SPIELTZ-AENDERUNGEN.md](SPIELTZ-AENDERUNGEN.md). Produktbilder und Produktstammdaten bleiben bei JTL. Der Live-Shop wird nicht veröffentlicht. Die Position des Gewährleistungszugangs ist ein eigener offener Punkt.

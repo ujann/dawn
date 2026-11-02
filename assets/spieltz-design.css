@@ -64,7 +64,7 @@ body [id$="__image_banner"] .banner__content{display:none}
 body [id$="__spieltz_kaufwege"] .multicolumn-card{padding:1.6rem}
 body [id$="__spieltz_kaufwege"] h3{font-size:1.8rem;line-height:1.25;min-height:0;margin-bottom:.8rem}
 body [id$="__spieltz_kaufwege"] .rte a{font-size:1.5rem;min-height:4.4rem;gap:.6rem}
-body [id$="__spieltz_kaufwege"] .multicolumn-card__image-wrapper{height:10rem;margin-bottom:1.2rem}
+body [id$="__spieltz_kaufwege"] .multicolumn-card__image-wrapper{height:14rem;margin-bottom:1.2rem}
 body .product-card-wrapper .card__inner{border:2px solid var(--sp-petrol);background:#fff}
 body .product__media-wrapper .product__media,body .cart-item__image-container{border:2px solid var(--sp-petrol)}
 body .spieltz-story{padding-block:3.2rem}
@@ -72,3 +72,4 @@ body .spieltz-story__content{max-width:80rem;font-size:1.6rem;line-height:1.7}
 body .spieltz-story figure{background:#fff;padding:2.4rem;margin:2.4rem 0 0}
 body .spieltz-story blockquote{font-size:2.4rem;line-height:1.35}
 @media(max-width:749px){body .spieltz-home-intro{padding-block:2rem 1.6rem}body .spieltz-home-intro h1{font-size:2.4rem}body [id$="__spieltz_kaufwege"] .multicolumn-card{padding:1.2rem}body [id$="__spieltz_kaufwege"] h3{font-size:1.7rem;min-height:0;margin-bottom:.8rem}body [id$="__spieltz_kaufwege"] .rte a{font-size:1.4rem;min-height:4.4rem}body [id$="__spieltz_kaufwege"] .multicolumn-list{gap:1.2rem}body [id$="__spieltz_kaufwege"] .grid__item{width:calc(50% - .6rem);max-width:calc(50% - .6rem)}body .spieltz-story figure{padding:1.6rem}body .spieltz-story blockquote{font-size:2rem}}
+@media(max-width:749px){body [id$="__spieltz_kaufwege"] .multicolumn-card__image-wrapper{height:11rem;margin-bottom:1rem}}

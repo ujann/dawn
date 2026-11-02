@@ -52,3 +52,11 @@ Die reine Sicherung/Dokumentation ist auf `codex/spieltz-vorschau-2026-11-02` ge
 - Shopify: keine Übertragung, keine Bild- oder Produktänderung, keine Veröffentlichung. Die Screenshot-Referenzen wurden nicht als fertige Shopbilder eingesetzt.
 - Rückweg: nur dieser Dokumentationsstand würde zurückgenommen; kein Shopify-Rollback nötig. Die lokale Figurenansicht ist ein zusätzlicher Vergleich zum bestehenden Stand.
 - Nächster Schritt: passende JTL-Originale anhand dieser Zuordnung beziehen und deren Einsatz in einem gesonderten, Git-gesicherten Vorschaupaket prüfen.
+
+## 03.11.2026 – Vier Kachelillustrationen: Git-gesichertes Umsetzungspaket
+
+- Freigabekorrektur: Die bereitgestellten Claude-Figuren sind für die Kacheln zu verwenden. Der vorher dokumentierte JTL-Originalblocker ist für diese Illustrationen aufgehoben. Produktfotos bleiben JTL-geführt.
+- Inhalt: vier unveränderte PNGs als Theme-Assets, Bildauswahl je Kachel im Mehrspalten-Abschnitt, vier Zuordnungen in der Startseitenvorlage und Bildflächen 140/110 Pixel. Normales Bildfeld hat Vorrang; bestehende Abschnitte ohne Auswahl bleiben unverändert.
+- Shopify-Ziel ausschließlich UNPUBLISHED `200823046488`. Vor diesem Commit noch nicht übertragen. Nach Übertragung folgt ein separater Prüfvermerk.
+- Prüfung vor Transfer: Quellbilder bytegleich; Liquid/CSS/JSON bestehen den Shopify-Validator. Vollständiger Theme Check 3.24.0: 202 Quelldateien, 60 Checks, weiterhin 2 vorhandene Fehler/22 Warnungen außerhalb der Änderung; keine neuen Befunde. Cacheanlage im Sandboxbetrieb nicht möglich, mitgelieferte Prüfschemata genutzt. Kein Produktwrite, keine Veröffentlichung.
+- Rückweg: die sieben Theme-Dateiänderungen dieses Pakets als neuen Rücknahme-Commit zurücknehmen und den so gesicherten Stand ausschließlich im Entwurf übertragen. Vorheriger Stand: `a5bcf74`; die vier neu hinzugefügten Assets können dabei kontrolliert entfernt werden.

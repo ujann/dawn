@@ -215,7 +215,8 @@
             "title": "Brett- und Kartenspiele",
             "text": "<p><a href=\"/collections/familienspiele\">Familienspiele</a><br/><a href=\"/collections/strategiespiele\">Strategiespiele</a><br/><a href=\"/collections/partyspiele\">Partyspiele</a></p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "spieltz_illustration": "spiele"
           }
         },
         "blanko": {
@@ -224,7 +225,8 @@
             "title": "Eigenes Spiel gestalten",
             "text": "<p><a href=\"/collections/blanko-brettspiele\">Blanko-Brettspiele</a><br/><a href=\"/collections/blanko-karten\">Blanko-Karten</a><br/><a href=\"/collections/kreativ-sets\">Kreativ-Sets</a></p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "spieltz_illustration": "blanko"
           }
         },
         "material": {
@@ -233,7 +235,8 @@
             "title": "Spielmaterial",
             "text": "<p><a href=\"/collections/spielfiguren\">Spielfiguren</a><br/><a href=\"/collections/wurfel\">Würfel</a><br/><a href=\"/collections/spielsteine-chips\">Spielsteine &amp; Chips</a></p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "spieltz_illustration": "material"
           }
         },
         "riesen": {
@@ -242,7 +245,8 @@
             "title": "Riesen Spiele",
             "text": "<p><a href=\"/collections/riesen-brettspiele\">Riesen-Brettspiele</a><br/><a href=\"/collections/riesen-spielmaterial\">Großes Spielmaterial</a></p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "spieltz_illustration": "riesen"
           }
         }
       },
