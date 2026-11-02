@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -7,7 +16,7 @@
       "login_form_password_placeholder": "Dein Passwort",
       "login_form_error": "Falsches Passwort!",
       "login_form_submit": "Eingeben",
-      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"\/admin\" class=\"link underlined-link\">Hier einloggen<\/a>",
+      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"/admin\" class=\"link underlined-link\">Hier einloggen</a>",
       "powered_by_shopify_html": "Dieser Shop wird unterstützt von {{ shopify }}"
     },
     "social": {
@@ -88,7 +97,7 @@
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
       },
-      "moderated_html": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Deines Kommentars. Weitere Angaben zum Datenschutz findest Du in unserer <a href=\"https:\/\/buntervogel-geschenke.de\/policies\/privacy-policy\" target=\"_blank\">Datenschutzerklärung<\/a>.",
+      "moderated_html": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen. Wir nutzen die eingegebenen Daten ausschließlich zur Darstellung Deines Kommentars. Weitere Angaben zum Datenschutz findest Du in unserer <a href=\"https://buntervogel-geschenke.de/policies/privacy-policy\" target=\"_blank\">Datenschutzerklärung</a>.",
       "comment_form_title": "Hinterlasse einen Kommentar",
       "name": "Name",
       "email": "E-Mail",
@@ -119,7 +128,7 @@
         "minimum_of": "Mindestens {{ quantity }}",
         "maximum_of": "Maximal {{ quantity }}",
         "multiples_of": "In {{ quantity }}er Schritten",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> im Warenkorb"
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> im Warenkorb"
       },
       "price": {
         "from_price_html": "Ab {{ price }}",
@@ -138,8 +147,8 @@
         "view_store_info": "Shop-Informationen anzeigen",
         "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
         "pick_up_available": "Abholung verfügbar",
-        "pick_up_available_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}<\/span> verfügbar",
-        "pick_up_unavailable_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}<\/span> derzeit nicht verfügbar",
+        "pick_up_available_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}</span> verfügbar",
+        "pick_up_unavailable_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}</span> derzeit nicht verfügbar",
         "unavailable": "Verfügbarkeit für Abholungen konnte nicht geladen werden",
         "refresh": "Aktualisieren"
       },
@@ -155,7 +164,7 @@
       },
       "view_full_details": "Vollständige Details anzeigen",
       "include_taxes": "",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Versand<\/a> wird beim Checkout berechnet",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet",
       "choose_options": "Optionen auswählen",
       "choose_product_options": "Optionen für {{ product_name }} auswählen",
       "value_unavailable": "{{ option_value }} – nicht verfügbar",
@@ -272,9 +281,9 @@
       "empty": "Dein Warenkorb ist leer",
       "cart_error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
       "cart_quantity_error_html": "Du kannst deinem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen.",
-      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand<\/a> werden beim Checkout berechnet",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet",
       "taxes_included_but_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
-      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand <\/a> wird beim Checkout berechnet",
+      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand </a> wird beim Checkout berechnet",
       "taxes_and_shipping_at_checkout": "Steuern und Versand werden beim Checkout berechnet",
       "headings": {
         "product": "Produkt",
@@ -286,7 +295,7 @@
       "update": "Aktualisieren",
       "login": {
         "title": "Hast du ein Konto?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logge dich ein<\/a>, damit es beim Checkout schneller geht."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logge dich ein</a>, damit es beim Checkout schneller geht."
       }
     },
     "footer": {
@@ -307,7 +316,7 @@
     "collection_template": {
       "title": "Kategorie",
       "empty": "Keine Produkte gefunden",
-      "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">entferne alle<\/a>"
+      "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">entferne alle</a>"
     },
     "video": {
       "load_video": "Video laden: {{ description }}"
@@ -333,10 +342,10 @@
     }
   },
   "localization": {
-    "country_label": "Land\/Region",
+    "country_label": "Land/Region",
     "language_label": "Sprache",
     "update_language": "Sprache aktualisieren",
-    "update_country": "Land\/Region aktualisieren"
+    "update_country": "Land/Region aktualisieren"
   },
   "customer": {
     "account": {
@@ -365,8 +374,8 @@
       "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "Ort",
-      "country": "Land\/Region",
-      "province": "Bundesland\/Provinz",
+      "country": "Land/Region",
+      "province": "Bundesland/Provinz",
       "zip": "PLZ",
       "phone": "Telefonnummer",
       "set_default": "Als Standard-Adresse festlegen",
@@ -487,7 +496,7 @@
         "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten (deine E-Mail-Adresse wird nur genutzt, um dir unseren Newsletter zuzusenden. Auf unsere Datenschutzerklärung wird insoweit verwiesen - der Link dazu befindet sich ganz am Ende dieser Seite. Du kannst dich jederzeit wieder von unserem Newsletter abmelden.)"
       },
       "review": {
-        "review_notice_html": "<p style=\"font-size:16px;color:#0B1235;\">Mit Ihrer Bestellung akzeptieren Sie unsere <a href=\"https:\/\/spieltz-shop.de\/policies\/terms-of-service\" target=\"_blank\">AGB<\/a> und bestätigen, dass Sie die <a href=\"https:\/\/spieltz-shop.de\/policies\/refund-policy\" target=\"_blank\">Widerrufsbelehrung und das Muster-Widerrufsformular<\/a> zur Kenntnis genommen haben. Informationen zum Datenschutz können Sie unserer <a href=\"https:\/\/spieltz-shop.de\/policies\/privacy-policy\" target=\"_blank\">Datenschutzerklärung<\/a> entnehmen.<\/p><br>"
+        "review_notice_html": "<p style=\"font-size:16px;color:#0B1235;\">Mit Ihrer Bestellung akzeptieren Sie unsere <a href=\"https://spieltz-shop.de/policies/terms-of-service\" target=\"_blank\">AGB</a> und bestätigen, dass Sie die <a href=\"https://spieltz-shop.de/policies/refund-policy\" target=\"_blank\">Widerrufsbelehrung und das Muster-Widerrufsformular</a> zur Kenntnis genommen haben. Informationen zum Datenschutz können Sie unserer <a href=\"https://spieltz-shop.de/policies/privacy-policy\" target=\"_blank\">Datenschutzerklärung</a> entnehmen.</p><br>"
       }
     }
   }

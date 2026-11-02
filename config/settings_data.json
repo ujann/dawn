@@ -1,15 +1,15 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Cover-2Element_28.png",
+    "logo": "shopify://shop_images/Cover-2Element_28.png",
     "logo_width": 150,
     "type_header_font": "avenir_next_n4",
     "heading_scale": 100,
@@ -105,9 +105,9 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "social_facebook_link": "https:\/\/www.facebook.com\/spieltz",
-    "social_instagram_link": "https:\/\/www.instagram.com\/spieltz\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/@spieltz",
+    "social_facebook_link": "https://www.facebook.com/spieltz",
+    "social_instagram_link": "https://www.instagram.com/spieltz/",
+    "social_youtube_link": "https://www.youtube.com/@spieltz",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
@@ -137,9 +137,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "background-1": {
         "settings": {
