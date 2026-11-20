@@ -70,6 +70,12 @@
 
             <tbody>
               {%- for item in cart.items -%}
+                {%- liquid
+                  assign spieltz_pack_product = false
+                  if item.product.handle == 'spieltz-halmakegel-25x25x60-mm-buche-lose' or item.product.handle == 'spieltz-blanko-spielkarten-pokergrosse-63x88-mm-lackiert'
+                    assign spieltz_pack_product = true
+                  endif
+                -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     {% if item.image %}
@@ -101,18 +107,18 @@
                           {{ 'products.product.price.regular_price' | t }}
                         </span>
                         <s class="cart-item__old-price product-option">
-                          {{- item.original_price | money -}}
+                          {% render 'spieltz-money', amount: item.original_price %}
                         </s>
                         <span class="visually-hidden">
                           {{ 'products.product.price.sale_price' | t }}
                         </span>
                         <strong class="cart-item__final-price product-option">
-                          {{ item.final_price | money }}
+                          {% render 'spieltz-money', amount: item.final_price %}
                         </strong>
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        {{ item.original_price | money }}
+                        {% render 'spieltz-money', amount: item.original_price %}{% if spieltz_pack_product %} <span class="caption">{{ 'pack_unit' | t }}</span>{% endif %}
                       </div>
                     {%- endif -%}
 
@@ -150,6 +156,13 @@
                       </dl>
 
                       <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+                      {% if spieltz_pack_product %}
+                        {% for option in item.options_with_values %}
+                          {% if option.name == 'Packungsgröße' %}
+                            {% assign spieltz_pack_size = option.value | plus: 0 %}{% assign spieltz_total_pieces = item.quantity | times: spieltz_pack_size %}<p class="spieltz-cart-pieces">{% if item.quantity == 1 %}{{ 'pack_pieces_one' | t: count: item.quantity, size: option.value, total: spieltz_total_pieces }}{% else %}{{ 'pack_pieces' | t: count: item.quantity, size: option.value, total: spieltz_total_pieces }}{% endif %}</p>
+                          {% endif %}
+                        {% endfor %}
+                      {% endif %}
                     {%- endif -%}
 
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -184,19 +197,19 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              {% render 'spieltz-money', amount: item.original_line_price %}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            {% render 'spieltz-money', amount: item.final_line_price %}
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          {% render 'spieltz-money', amount: item.original_line_price %}
                         </span>
                       {%- endif -%}
 
@@ -219,8 +232,8 @@
 
                   <td class="cart-item__quantity">
                     <div class="cart-item__quantity-wrapper">
-                      <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
-                        {{ 'products.product.quantity.label' | t }}
+                      <label class="{% if spieltz_pack_product %}caption{% else %}visually-hidden{% endif %}" for="Quantity-{{ item.index | plus: 1 }}">
+                        {% if spieltz_pack_product %}{{ 'pack_quantity_label' | t }}{% else %}{{ 'products.product.quantity.label' | t }}{% endif %}
                       </label>
                       <quantity-input class="quantity cart-quantity">
                         <button class="quantity__button no-js-hidden" name="minus" type="button">
@@ -243,7 +256,7 @@
                           {% endif %}
                           step="{{ item.variant.quantity_rule.increment }}"
                           {% # theme-check-enable %}
-                          aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                          aria-label="{% if spieltz_pack_product %}{{ 'pack_quantity_input' | t: product: item.product.title | escape }}{% else %}{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}{% endif %}"
                           id="Quantity-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
                         >
@@ -264,7 +277,7 @@
                           class="button button--tertiary"
                           aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
                         >
-                          {% render 'icon-remove' %}
+                          {{ 'pack_remove' | t }}
                         </a>
                       </cart-remove-button>
                     </div>
@@ -307,19 +320,19 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              {% render 'spieltz-money', amount: item.original_line_price %}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            {% render 'spieltz-money', amount: item.final_line_price %}
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          {% render 'spieltz-money', amount: item.original_line_price %}
                         </span>
                       {%- endif -%}
 
@@ -382,6 +395,24 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
-  ]
+  ],
+  "locales": {
+    "de": {
+      "pack_remove": "Entfernen",
+      "pack_pieces_one": "{{ count }} Packung × {{ size }} Stück = {{ total }} Stück",
+      "pack_pieces": "{{ count }} Packungen × {{ size }} Stück = {{ total }} Stück",
+      "pack_unit": "pro Packung",
+      "pack_quantity_label": "Anzahl Packungen",
+      "pack_quantity_input": "Anzahl Packungen für {{ product }}"
+    },
+    "en": {
+      "pack_remove": "Remove",
+      "pack_pieces_one": "{{ count }} pack × {{ size }} pieces = {{ total }} pieces",
+      "pack_pieces": "{{ count }} packs × {{ size }} pieces = {{ total }} pieces",
+      "pack_unit": "per pack",
+      "pack_quantity_label": "Number of packs",
+      "pack_quantity_input": "Number of packs for {{ product }}"
+    }
+  }
 }
 {% endschema %}

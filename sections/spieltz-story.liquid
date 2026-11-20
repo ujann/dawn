@@ -1,0 +1,22 @@
+<section class="spieltz-story">
+  <div class="page-width">
+    <div class="spieltz-story__content">
+      <div class="rte">{{ section.settings.text }}</div>
+      <figure>
+        <blockquote>{{ section.settings.quote | escape }}</blockquote>
+        <figcaption>{{ section.settings.author | escape }}</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Spieltz Zitat und Text",
+  "settings": [
+    {"type": "text", "id": "quote", "label": "Zitat"},
+    {"type": "text", "id": "author", "label": "Autor"},
+    {"type": "richtext", "id": "text", "label": "Einleitung"}
+  ],
+  "presets": [{"name": "Spieltz Zitat und Text"}]
+}
+{% endschema %}

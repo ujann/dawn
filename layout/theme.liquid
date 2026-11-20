@@ -227,6 +227,8 @@
       }
     {% endstyle %}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'spieltz-design.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'spieltz-design.js' | asset_url }}" defer="defer"></script>
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
@@ -256,6 +258,7 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
     {% sections 'header-group' %}
+    {% section 'spieltz-warranty-notice' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -295,3 +298,4 @@
     {%- endif -%}
   {% render "bc_banner" %}</body>
 </html>
+

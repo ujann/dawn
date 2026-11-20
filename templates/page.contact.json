@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -10,7 +19,7 @@
     "cdc5ebfc-f42d-4433-bd2d-a94fb3371d78": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<p style=\"text-align: center;\">Unser Kundenservice: <a href=\"mailto:info@spieltz.de\">info@spieltz.de<\/a><\/p>",
+        "custom_liquid": "<p style=\"text-align: center;\">Unser Kundenservice: <a href=\"mailto:info@spieltz.de\">info@spieltz.de</a></p>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0

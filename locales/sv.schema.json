@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "settings_schema": {
     "colors": {
@@ -972,9 +981,6 @@
         },
         "image_2": {
           "label": "Andra bild"
-        },
-        "color_scheme": {
-          "info": "Synlig när ruta visas."
         },
         "stack_images_on_mobile": {
           "label": "Stapla bilder på mobil"
@@ -2648,6 +2654,9 @@
             "label": "Höger"
           },
           "label": "Linjering av innehåll på mobil"
+        },
+        "color_scheme": {
+          "info": "Synlig när ruta visas."
         }
       },
       "blocks": {

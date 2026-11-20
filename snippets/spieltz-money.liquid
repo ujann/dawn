@@ -1,0 +1,9 @@
+{% doc %}
+  Formats storefront amounts without changing the shop-wide money settings.
+  @param {number} amount - Amount in currency subunits
+{% enddoc %}
+{%- if cart.currency.iso_code == 'EUR' -%}
+  {{- amount | money_without_currency -}}&nbsp;€
+{%- else -%}
+  {{- amount | money_with_currency -}}
+{%- endif -%}
